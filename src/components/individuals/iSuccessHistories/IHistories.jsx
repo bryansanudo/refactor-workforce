@@ -3,19 +3,19 @@ import EmployerTimeline from "@/components/individuals/iSuccessHistories/Employe
 import LifeTimeline from "@/components/individuals/iSuccessHistories/LifeTimeline";
 import ISliderTestimonials from "@/components/individuals/iSuccessHistories/ISliderTestimonials";
 import IHeroHistories from "@/components/individuals/iSuccessHistories/IHeroHistories";
+import TitleContent from "@/components/individuals/TitleContent";
 
 const IHistories = () => {
   return (
     <>
       <IHeroHistories />
-      <ISection title="success histories" color="primary">
-        {/* Case Studies*/}
+      <ISection>
+        {/* ***  Case Studies **** */}
 
-        <div className="flex flex-col gap-12 items-center justify-center  my-10 ">
-          <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl">
-            A Process for almost anyone
-          </p>
-          <p className="max-w-[300px] md:max-w-[800px] font-bold">
+        {/* A Process for almost anyone*/}
+
+        <TitleContent title="A Process for almost anyone">
+          <p className="max-w-[300px] md:max-w-[800px] text-left ">
             We have seen first hand this process work for many different people
             at many different stages in their lives. The EB-3 program kickstarts
             opportunity in the United States by providing a U.S. Green Card to
@@ -23,14 +23,15 @@ const IHistories = () => {
             client's experiences with this Green Card process with BDV
             Solutions. No two cases are the same!
           </p>
-          <p className="max-w-[300px] md:max-w-[800px] font-bold">
+          <p className="max-w-[300px] md:max-w-[800px] text-left ">
             How does this process actually work for people? How long will the
             EB-3 Unskilled Visa take? Can I get promoted in my sponsor job? What
             kind of opportunities do I have after the program? Read to learn
             more about how individuals from around the world have experienced
             this process.
           </p>
-        </div>
+        </TitleContent>
+
         <LifeTimeline />
         <div className="flex flex-col gap-12 items-center justify-center my-10 ">
           <p className="max-w-[300px] md:max-w-[800px] font-bold">
@@ -80,7 +81,6 @@ const IHistories = () => {
             through the EB3 Unskilled Visa Program.
           </p>
         </div>
-
         {/* Testimonials */}
         <ISliderTestimonials />
       </ISection>

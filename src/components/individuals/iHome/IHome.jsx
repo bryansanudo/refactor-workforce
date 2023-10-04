@@ -101,7 +101,6 @@ const IHome = () => {
         <ITestimonials />
 
         {/* Struggling to Find Commited Workers? */}
-
         <ImgContent
           img={contactImg}
           title2="Struggling to Find Commited Workers?"

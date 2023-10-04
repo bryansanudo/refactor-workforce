@@ -381,7 +381,7 @@ const IServices = () => {
               </p>
             </div>
           </ImgContent>
-
+          <Divider />
           {/* Our expertise */}
           <ImgContent
             img={especialistImg}
@@ -401,8 +401,6 @@ const IServices = () => {
               different timetable and procedure.
             </p>
           </ImgContent>
-
-          <Divider />
         </ISection>
       </>
     </>

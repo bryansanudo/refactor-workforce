@@ -2,7 +2,7 @@ import React from "react";
 
 const EbTwoCol = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center md:mt-20 mt-10">
+    <div className="w-full flex flex-col items-center justify-center">
       <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl">
         EB-3 Visa
       </p>
