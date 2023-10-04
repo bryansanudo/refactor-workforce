@@ -62,7 +62,7 @@ const IHome = () => {
           title1="Contact Us"
           title2="Want to Know More?"
         >
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} mb-6`}>
             If you find yourself in a situation where you are struggling to find
             a significant number of qualified, accessible, and highly motivated
             U.S. employees to fill various entry-level positions, or if you are

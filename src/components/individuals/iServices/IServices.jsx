@@ -389,7 +389,7 @@ const IServices = () => {
             title1="Successful EB-3 Cases with EB-3 Workforce Solutions"
             title2="Our Expertise"
           >
-            <p className={`${styles.sectionText}`}>
+            <p className={`${styles.sectionText} mb-6`}>
               Our goal is the same as our clients: for them to receive their
               U.S. Green Card through the EB-3 Unskilled Visa program.
             </p>
