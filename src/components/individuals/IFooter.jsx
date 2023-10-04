@@ -31,8 +31,8 @@ const IFooter = () => {
         </header>
         <p className="link link-hover">support@eb3wfs.com</p>
         <p className="">American Dream Recruiting</p>
-        <p className="">777 Brickell Avenue Suite</p>
-        <p className="">500 Miami, FL. 33131</p>
+        <p className="">777 Brickell Avenue Suite 500</p>
+        <p className="">Miami, FL 33131</p>
       </nav>
       <nav>
         <header className="footer-title text-black font-extrabold">
