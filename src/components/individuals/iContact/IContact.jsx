@@ -2,6 +2,7 @@ import ISection from "@/components/individuals/ISection";
 import { useEffect } from "react";
 import IHeroContact from "@/components/individuals/iContact/IHeroContact";
 import IFormContact from "@/components/individuals/IFormContact";
+import TitleContent from "@/components/individuals/TitleContent";
 
 const IContact = () => {
   const steps = [
@@ -76,18 +77,15 @@ const IContact = () => {
       <IHeroContact />
       <ISection title="Contact" color="primary">
         {/* History of EB-3 Solutions */}
-        <div className="flex flex-col gap-12 mb-10   ">
-          <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl ">
-            Take action now and apply!
-          </p>
-          <p className="max-w-[300px] md:max-w-[800px] font-bold text-left">
+        <TitleContent title="Take action now and apply!">
+          <p className="max-w-[300px] md:max-w-[800px] text-left">
             Are you keen on obtaining a U.S. Permanent Resident Card (Green
             Card) for yourself and your family? MCC USA collaborates with U.S.
             corporations that are willing to support your Green Card application
             in return for your commitment to work with them for at least one
             year.
           </p>
-        </div>
+        </TitleContent>
 
         <iframe
           id="JotFormIFrame-232636593677672"
@@ -109,21 +107,21 @@ const IContact = () => {
           scrolling="no"
         ></iframe>
         {/* steps */}
-        <h2 className="font-bold text-3xl text-center p-2 text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl my-8">
-          Steps for the On-boarding Process
-        </h2>
-        <div className=" grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3">
-          {steps.map(({ id, title, subtitle }) => (
-            <div
-              key={id}
-              className={`rounded-lg p-6 shadow-md duration-500 hover:scale-105 shadow-primary`}
-            >
-              <p className="font-bold text-2xl">Step {id}</p>
-              <p className="font-bold my-2">{title}</p>
-              <p>{subtitle}</p>
-            </div>
-          ))}
-        </div>
+
+        <TitleContent title="Steps for the On-boarding Process">
+          <div className=" grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3">
+            {steps.map(({ id, title, subtitle }) => (
+              <div
+                key={id}
+                className={`rounded-lg p-6 shadow-md duration-500 hover:scale-105 shadow-primary`}
+              >
+                <p className="font-bold text-2xl">Step {id}</p>
+                <p className="font-bold my-2">{title}</p>
+                <p>{subtitle}</p>
+              </div>
+            ))}
+          </div>
+        </TitleContent>
 
         {/* maps */}
         <p>
@@ -142,7 +140,7 @@ const IContact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         />
         <IFormContact />
-        <div className="mb-16" />
+        {/* <div className="mb-16" /> */}
       </ISection>
     </>
   );

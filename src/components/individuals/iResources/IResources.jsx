@@ -1,4 +1,5 @@
 import ISection from "@/components/individuals/ISection";
+import IHeroResources from "@/components/individuals/iResources/IHeroResources";
 
 const IResources = () => {
   const questions = [
@@ -101,27 +102,30 @@ const IResources = () => {
   ];
 
   return (
-    <ISection title="Resources" color="primary">
-      <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-        Frequently Asked Questions
-      </p>
-      <div className="flex flex-col items-center justify-center max-w-[1000px] my-10 ">
-        {questions.map(({ id, question, answer }) => (
-          <div
-            key={id}
-            tabIndex={0}
-            className="collapse collapse-arrow border border-primary bg-base-100 rounded-box w-full"
-          >
-            <div className="collapse-title text-xl font-medium ">
-              {question}
+    <>
+      <IHeroResources />
+      <ISection title="Resources" color="primary">
+        <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
+          Frequently Asked Questions
+        </p>
+        <div className="flex flex-col items-center justify-center max-w-[1000px] my-10 ">
+          {questions.map(({ id, question, answer }) => (
+            <div
+              key={id}
+              tabIndex={0}
+              className="collapse collapse-arrow border border-primary bg-base-100 rounded-box w-full"
+            >
+              <div className="collapse-title text-xl font-medium ">
+                {question}
+              </div>
+              <div className="collapse-content text-left">
+                <p>{answer}</p>
+              </div>
             </div>
-            <div className="collapse-content text-left">
-              <p>{answer}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </ISection>
+          ))}
+        </div>
+      </ISection>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ const ISliderTestimonials = () => {
 
   return (
     <>
-      <div className="flex  justify-center items-center  md:gap-20 gap-4 mx-8 my-10">
+      <div className="flex  justify-center items-center  md:gap-20 gap-4 mx-8 ">
         <button
           className="flex  items-center justify-center  "
           onClick={handleClickPrev}

@@ -9,7 +9,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 const LifeTimeline = () => {
   return (
     <div className="">
-      <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
+      <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
         A new life for this family
       </p>
       <VerticalTimeline lineColor="#000">
