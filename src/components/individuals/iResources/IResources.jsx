@@ -1,5 +1,6 @@
 import ISection from "@/components/individuals/ISection";
 import IHeroResources from "@/components/individuals/iResources/IHeroResources";
+import { styles } from "@/styles";
 
 const IResources = () => {
   const questions = [
@@ -105,7 +106,7 @@ const IResources = () => {
     <>
       <IHeroResources />
       <ISection title="Resources" color="primary">
-        <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
+        <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl mt-10 ">
           Frequently Asked Questions
         </p>
         <div className="flex flex-col items-center justify-center max-w-[1000px] my-10 ">
@@ -115,10 +116,10 @@ const IResources = () => {
               tabIndex={0}
               className="collapse collapse-arrow border border-primary bg-base-100 rounded-box w-full"
             >
-              <div className="collapse-title text-xl font-medium ">
+              <div className={`${styles.sectionText} collapse-title font-bold`}>
                 {question}
               </div>
-              <div className="collapse-content text-left">
+              <div className={`${styles.sectionText} collapse-content`}>
                 <p>{answer}</p>
               </div>
             </div>

@@ -6,6 +6,7 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import ImgContent from "@/components/individuals/ImgContent";
 import Divider from "@/components/individuals/IDivider";
 import TitleContent from "@/components/individuals/TitleContent";
+import { styles } from "@/styles";
 
 const IAbout = () => {
   return (
@@ -18,11 +19,11 @@ const IAbout = () => {
           title1="Successful EB-3 Cases with EB-3 Workforce Solutions"
           title2="Our Specialty"
         >
-          <p className="text-left mb-6 ">
+          <p className={`${styles.sectionText}`}>
             Our objective is the same as that of our clients: obtaining their
             U.S. Green Card via the EB-3 Unskilled Visa program.
           </p>
-          <p className="text-left ">
+          <p className={`${styles.sectionText}`}>
             Our recruitment and client engagement specialists have extensive
             experience in the entire EB-3 process. We have partnered with
             immigration attorneys who have over 25 years of experience in the
@@ -57,14 +58,14 @@ const IAbout = () => {
         {/* History of EB-3 Solutions */}
 
         <TitleContent title="History of EB-3 Solutions">
-          <p className="max-w-[300px] md:max-w-[800px] text-left">
+          <p className={`${styles.sectionText}`}>
             History of EB-3 Solutions The corporation EB-3 Workforce Solutions
             has had a substantial effect on the American labor market. By
             concentrating on offering U.S. companies alternatives for hiring
             entry-level workers, EB-3 Workforce Solutions strives to become a
             top supplier of unskilled labor solutions to American firms.
           </p>
-          <p className="max-w-[300px] md:max-w-[800px]  text-left">
+          <p className={`${styles.sectionText}`}>
             To help non-immigrant visa holders change their visa status, and
             assist immigrants in achieving a EB-3 permanent residence Green
             Card, EB-3 Workforce Solutions collaborates with some of the leading
@@ -73,7 +74,7 @@ const IAbout = () => {
             and those with non-immigrant visas to become lawful permanent
             residents of the United States.
           </p>
-          <p className="max-w-[300px] md:max-w-[800px]  text-left">
+          <p className={`${styles.sectionText}`}>
             EB-3 Workforce Solutions assists American companies in hiring the
             qualified personnel they require to expand and prosper. EB-3
             Workforce Solutions has assisted in addressing the persistent lack

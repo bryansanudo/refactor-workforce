@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import IHeroContact from "@/components/individuals/iContact/IHeroContact";
 import IFormContact from "@/components/individuals/IFormContact";
 import TitleContent from "@/components/individuals/TitleContent";
+import { styles } from "@/styles";
 
 const IContact = () => {
   const steps = [
@@ -78,7 +79,7 @@ const IContact = () => {
       <ISection title="Contact" color="primary">
         {/* History of EB-3 Solutions */}
         <TitleContent title="Take action now and apply!">
-          <p className="max-w-[300px] md:max-w-[800px] text-left">
+          <p className={`${styles.sectionText}`}>
             Are you keen on obtaining a U.S. Permanent Resident Card (Green
             Card) for yourself and your family? MCC USA collaborates with U.S.
             corporations that are willing to support your Green Card application
@@ -124,12 +125,14 @@ const IContact = () => {
         </TitleContent>
 
         {/* maps */}
-        <p>
-          Although we don’t have international or other national offices, you
-          are welcome to schedule a call with our team by signing up for a free
-          account.
-        </p>
-        <p>We are open Monday through Friday from 9:00am-5:00pm.</p>
+
+        <TitleContent title="We are open Monday through Friday from 9:00am-5:00pm">
+          <p className="mx-10">
+            Although we don’t have international or other national offices, you
+            are welcome to schedule a call with our team by signing up for a
+            free account.
+          </p>
+        </TitleContent>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.12577150501!2d-80.19247892458863!3d25.76640897734893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b682e4c089c9%3A0xe0d50371e9e8f416!2s777%20Brickell%20Ave%2C%20Miami%2C%20FL%2033131!5e0!3m2!1sen!2sus!4v1696260775392!5m2!1sen!2sus"
           width="1000"

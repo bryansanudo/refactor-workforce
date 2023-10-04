@@ -4,6 +4,7 @@ import LifeTimeline from "@/components/individuals/iSuccessHistories/LifeTimelin
 import ISliderTestimonials from "@/components/individuals/iSuccessHistories/ISliderTestimonials";
 import IHeroHistories from "@/components/individuals/iSuccessHistories/IHeroHistories";
 import TitleContent from "@/components/individuals/TitleContent";
+import { styles } from "@/styles";
 
 const IHistories = () => {
   return (
@@ -14,7 +15,7 @@ const IHistories = () => {
 
         {/* A Process for almost anyone*/}
         <TitleContent title="A Process for almost anyone">
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             We have seen first hand this process work for many different people
             at many different stages in their lives. The EB-3 program kickstarts
             opportunity in the United States by providing a U.S. Green Card to
@@ -22,7 +23,7 @@ const IHistories = () => {
             client's experiences with this Green Card process with BDV
             Solutions. No two cases are the same!
           </p>
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             How does this process actually work for people? How long will the
             EB-3 Unskilled Visa take? Can I get promoted in my sponsor job? What
             kind of opportunities do I have after the program? Read to learn
@@ -33,7 +34,7 @@ const IHistories = () => {
 
         <LifeTimeline />
         <TitleContent>
-          <p className="max-w-[300px] md:max-w-[800px] text-left">
+          <p className={`${styles.sectionText}`}>
             This process gave this father the opportunity to get himself, his
             wife, and his young kids a U.S. Green Card. The COVID-19 pandemic
             put significant delays on getting a decision after their visa
@@ -41,7 +42,7 @@ const IHistories = () => {
             the embassy began to open back up, the whole family got their visas
             approved.
           </p>
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             They now are building a new life in the United States and are
             creating many opportunities for their family. Through the EB3
             process, this family can live and work legally in the United States.
@@ -54,7 +55,7 @@ const IHistories = () => {
 
         <EmployerTimeline />
         <TitleContent>
-          <p className="max-w-[300px] md:max-w-[800px] text-left">
+          <p className={`${styles.sectionText}`}>
             This BDV Solutions client worked at a fast food restaurant in the
             mid-west United States. She worked for her employer for slightly
             over a year and was one of the first EB3 workers to begin work at
@@ -65,7 +66,7 @@ const IHistories = () => {
             endeavors. Now, some of her family is starting their Green Card
             journey with BDV Solutions.
           </p>
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             This situation is a testament to the wonderful employers that we
             work with. The EB-3 employees don’t get special treatment and are
             held to the same standards as every other employee at the
@@ -73,7 +74,7 @@ const IHistories = () => {
             success that BDV Solutions clients have in this program. They
             celebrate green card approvals with the BDV team and BDV clients.
           </p>
-          <p className="max-w-[300px] md:max-w-[800px] text-left">
+          <p className={`${styles.sectionText}`}>
             While this client is moving on to other work opportunities, some of
             our clients continue to work for their employer sponsors in a
             greater capacity because they were promoted to more advanced

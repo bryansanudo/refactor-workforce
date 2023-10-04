@@ -15,13 +15,14 @@ import especialistImg from "@/assets/especialist.jpg";
 import TitleContent from "@/components/individuals/TitleContent";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
+import { styles } from "@/styles";
 
 const IServices = () => {
   return (
     <>
       <>
         <IHeroServices />
-        <ISection title="Home" color="primary">
+        <ISection>
           <IServicesCard />
 
           {/*Timeline  Process */}
@@ -34,7 +35,7 @@ const IServices = () => {
 
           {/* Longstanding Success */}
           <TitleContent title="Longstanding Success">
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               The EB-3 'Other Workers' Visa, created by the US Government,
               provides an opportunity for foreign nationals to work in positions
               experiencing chronic labor shortages. With a yearly allocation of
@@ -45,7 +46,7 @@ const IServices = () => {
               ensuring a smooth and successful sponsorship process for all
               parties involved.
             </p>
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               The EB-3 "Other Workers" Visa is a great way to become a permanent
               resident of the United States. You can get this visa by changing
               your status or by going through consular processing in your home
@@ -274,7 +275,7 @@ const IServices = () => {
 
           {/* Why does this process work? */}
           <TitleContent title=" Why does this process work?">
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               Employers are having a harder time than ever before finding people
               to fill their low-skilled jobs. Industries like cleaning, food
               service, packing, and storage have been hit the hardest. Instead
@@ -284,7 +285,7 @@ const IServices = () => {
               to fill open positions with the help of an EB-3 visa for unskilled
               workers.
             </p>
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               The Immigration Act of 1990 set up a program called
               "Employment-Based Visas," which lets US businesses sponsor foreign
               workers who want to work and are qualified to do so. There are
@@ -292,7 +293,7 @@ const IServices = () => {
               lot of schooling, while part of the third type (the EB-3) is for
               people who can do unskilled work for their future employers.
             </p>
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               The EB-3 "Other Worker" Visa process leads directly to permanent
               residency in the U.S., and the terms are better than most of the
               other ways to get there.
@@ -305,7 +306,7 @@ const IServices = () => {
 
           {/* What we do */}
           <TitleContent title="What We Do">
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               Experience a seamless process in securing EB3 visa workers with
               our comprehensive support. From the very beginning, our team is
               dedicated to finding and vetting potential candidates, and
@@ -350,7 +351,7 @@ const IServices = () => {
 
           {/* How it works */}
           <ImgContent img={coWorkersImg} title2="How It Works">
-            <p className="max-w-[300px] md:max-w-[800px] text-left">
+            <p className={`${styles.sectionText}`}>
               Join the growing list of satisfied clients who have benefited from
               our expertise in the EB3 Unskilled Visa process. We specialize in
               connecting employers with highly skilled foreign nationals,
@@ -388,11 +389,11 @@ const IServices = () => {
             title1="Successful EB-3 Cases with EB-3 Workforce Solutions"
             title2="Our Expertise"
           >
-            <p className="max-w-[300px] md:max-w-[800px] text-left">
+            <p className={`${styles.sectionText}`}>
               Our goal is the same as our clients: for them to receive their
               U.S. Green Card through the EB-3 Unskilled Visa program.
             </p>
-            <p className="max-w-[300px] md:max-w-[800px] text-left ">
+            <p className={`${styles.sectionText}`}>
               We have had several instances that were successful. In order to
               showcase the diverse experiences of someone going through this
               procedure, EB-3 Workforce Solutions has analyzed the best course
