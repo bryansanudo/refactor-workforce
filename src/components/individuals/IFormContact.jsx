@@ -2,7 +2,7 @@ import React from "react";
 
 const IFormContact = () => {
   return (
-    <div className="flex flex-col md:gap-10 gap-4 p-10 rounded-3xl shadow-black shadow-2xl  mx-10   ">
+    <div className="flex flex-col md:gap-10 gap-4 p-10 rounded-3xl shadow-black shadow-2xl  mx-10 my-10  ">
       <p className="md:text-4xl text-2xl font-bold">GET IN TOUCH TODAY!</p>
       <p className="md:text-2xl text-lg text-gray-400">
         Fill out the form below and we'll get back to you as soon as possible.

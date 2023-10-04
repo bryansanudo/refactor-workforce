@@ -12,6 +12,7 @@ import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
 import EbTwoCol from "@/components/individuals/iHome/EbTwoCol";
 import TitleContent from "@/components/individuals/TitleContent";
+import { styles } from "@/styles";
 
 const IHome = () => {
   return (
@@ -24,7 +25,7 @@ const IHome = () => {
           title1="Meet The Founder"
           title2="James Baker, CPA"
         >
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             James is the head of different companies around the US, serving
             international Corporations and international entrepreneurs with
             different services and companies. ​ James allied with silent
@@ -61,7 +62,7 @@ const IHome = () => {
           title1="Contact Us"
           title2="Want to Know More?"
         >
-          <p className="text-left mb-4 ">
+          <p className={`${styles.sectionText}`}>
             If you find yourself in a situation where you are struggling to find
             a significant number of qualified, accessible, and highly motivated
             U.S. employees to fill various entry-level positions, or if you are
@@ -69,7 +70,7 @@ const IHome = () => {
             responsibilities and charges, then we have the perfect solution for
             you.
           </p>
-          <p className="text-left">
+          <p className={`${styles.sectionText}`}>
             Introducing the EB-3 Visa Program, a long-term staffing solution
             specifically designed for U.S. employers like yourself. This
             employment-based Green Card option is tailored to address your
@@ -85,7 +86,7 @@ const IHome = () => {
 
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
-          <p className="max-w-[300px] md:max-w-[800px] text-left ">
+          <p className={`${styles.sectionText}`}>
             At EB3 Workforce Solutions, we understand the importance of finding
             reliable and dedicated employees. That's why we offer a unique
             solution to your staffing needs - EB3 visa workers. Our team is
@@ -105,7 +106,7 @@ const IHome = () => {
           img={contactImg}
           title2="Struggling to Find Commited Workers?"
         >
-          <p className="text-left ">
+          <p className={`${styles.sectionText}`}>
             Discover the solution to your staffing needs with our company! Say
             goodbye to the hassle of unreliable workers and hello to a team of
             dedicated and committed professionals. Our EB3 visa workers are
