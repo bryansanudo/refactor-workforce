@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logo from "@/assets/logo.png";
 
-const CNavbar = ({ darkMode, setDarkMode }) => {
+const CNavbar = ({ setContent }) => {
+  const btnIndividuals = () => {
+    setContent(1);
+  };
   const [isMenuShown, setIsMenuShown] = useState(false);
   const links = [
     {
@@ -41,17 +44,23 @@ const CNavbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
-      <div className=" w-full h-16 bg-secondary text-white z-20  ">
+      <div className="fixed w-full h-16 bg-secondary text-white z-20  ">
         <div className="flex justify-between  md:gap-5 items-center max-w-screen-xl mx-auto px-8 h-full">
           <div className="hidden lg:flex items-center">
             <ul className="flex ">
               {links.map(({ id, link, name }) => (
                 <Link key={id} to={link}>
-                  <li className="p-4 uppercase duration-300 hover:text-white font-bold hover:scale-110 cursor-pointer">
+                  <li className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer">
                     {name}
                   </li>
                 </Link>
               ))}
+              <li
+                className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
+                onClick={btnIndividuals}
+              >
+                individuals
+              </li>
             </ul>
           </div>
 
@@ -84,11 +93,17 @@ const CNavbar = ({ darkMode, setDarkMode }) => {
               to={link}
               key={id}
             >
-              <li className="p-4 uppercase cursor-pointer duration-300 hover:text-thPrimary">
+              <li className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer">
                 {name}
               </li>
             </Link>
           ))}
+          <li
+            className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
+            onClick={btnIndividuals}
+          >
+            individuals
+          </li>
         </ul>
       </div>
     </>

@@ -16,10 +16,6 @@ const App = () => {
 
   return (
     <>
-      {/* <div className="flex items-center justify-between mx-20">
-        <button onClick={btn1}>If You are Individual</button>
-        <button onClick={btn2}>If You are Companie</button>
-      </div> */}
       {(() => {
         if (content === 1) {
           return (
