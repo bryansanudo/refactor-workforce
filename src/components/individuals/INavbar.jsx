@@ -78,7 +78,7 @@ const INavbar = ({ setContent }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <button
-            className="btn btn-secondary btn-outline hover:scale-105 duration-700 "
+            className="btn btn-secondary btn-outline capitalize hover:scale-105 duration-700 "
             onClick={btnCompanies}
           >
             Looking For Employees?
