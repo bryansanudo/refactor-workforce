@@ -4,7 +4,7 @@ const IHeroHome = () => {
   return (
     <>
       <div
-        className="hero min-h-[60vh]  "
+        className="hero lg:min-h-[60vh] min-h-[90vh]  "
         style={{
           backgroundImage:
             "url(https://static.wixstatic.com/media/863055_797b59f1342445a19f07a0cee65d9812~mv2.jpg/v1/fill/w_1652,h_671,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/863055_797b59f1342445a19f07a0cee65d9812~mv2.jpg)",
