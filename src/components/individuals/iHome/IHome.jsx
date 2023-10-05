@@ -86,7 +86,7 @@ const IHome = () => {
 
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} px-4`}>
             At EB3 Workforce Solutions, we understand the importance of finding
             reliable and dedicated employees. That's why we offer a unique
             solution to your staffing needs - EB3 visa workers. Our team is
