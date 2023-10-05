@@ -49,18 +49,18 @@ const CNavbar = ({ setContent }) => {
   return (
     <>
       <div className="fixed w-full h-24 bg-gray-400 text-white z-20  ">
-        <div className="flex justify-between gap-6 items-center mx-6 lg:mx-10  px-3 h-full">
+        <div className="flex justify-between gap-4 items-center  lg:mx-10  px-3 h-full">
           {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
           <img
             src={logo}
             alt=""
             className="object-contain h-20 hidden lg:block  "
           />
-          <div className="hidden lg:flex items-center mr-20 gap-20">
+          <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
                 <NavLink key={id} to={link} className={activeLink}>
-                  <li className=" capitalize  duration-300 hover:text-secondary  hover:scale-110 cursor-pointer">
+                  <li className=" capitalize  duration-300 hover:text-secondary hover:scale-110 cursor-pointer">
                     {name}
                   </li>
                 </NavLink>
@@ -85,7 +85,7 @@ const CNavbar = ({ setContent }) => {
             className="btn btn-primary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
             onClick={btnIndividuals}
           >
-            I Want <span className="lowercase">to</span> Immigrate
+            I Want<span className="lowercase">to</span>Imigrate
           </button>
         </div>
       </div>
