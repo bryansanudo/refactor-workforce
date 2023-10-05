@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
+
 import logo from "@/assets/logo.png";
 
 const CNavbar = ({ setContent }) => {
+  const activeLink = ({ isActive }) =>
+    isActive
+      ? " relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[2px] after:bg-secondary"
+      : ``;
+  const [isMenuShown, setIsMenuShown] = useState(false);
   const btnIndividuals = () => {
     setContent(1);
   };
-  const [isMenuShown, setIsMenuShown] = useState(false);
   const links = [
     {
       id: 1,
       link: "/companies/home",
-      name: "home",
+      name: "Home",
     },
     {
       id: 2,
@@ -44,23 +48,23 @@ const CNavbar = ({ setContent }) => {
 
   return (
     <>
-      <div className="fixed w-full h-16 bg-secondary text-white z-20  ">
-        <div className="flex justify-between  md:gap-5 items-center max-w-screen-xl mx-auto px-8 h-full">
-          <div className="hidden lg:flex items-center">
-            <ul className="flex ">
+      <div className="fixed w-full h-24 bg-gray-400 text-white z-20  ">
+        <div className="flex justify-between gap-6 items-center mx-6 lg:mx-10  px-3 h-full">
+          {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
+          <img
+            src={logo}
+            alt=""
+            className="object-contain h-20 hidden lg:block  "
+          />
+          <div className="hidden lg:flex items-center mr-20 gap-20">
+            <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
-                <Link key={id} to={link}>
-                  <li className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer">
+                <NavLink key={id} to={link} className={activeLink}>
+                  <li className=" capitalize  duration-300 hover:text-secondary  hover:scale-110 cursor-pointer">
                     {name}
                   </li>
-                </Link>
+                </NavLink>
               ))}
-              <li
-                className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
-                onClick={btnIndividuals}
-              >
-                individuals
-              </li>
             </ul>
           </div>
 
@@ -71,39 +75,38 @@ const CNavbar = ({ setContent }) => {
             {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
 
-          <div className="flex items-center flex-row justify-center bg-white rounded-lg p-1  ">
-            <img
-              src={logo}
-              alt=""
-              className=" object-cover h-10 duration-300 shadow-xl cursor-pointer shadow-thSecondary hover:scale-105"
-            />
-          </div>
+          {/* <div className="bg-white p-1 rounded-full block lg:hidden">
+          </div> */}
+          <img
+            src="/favicon.png"
+            className="h-10 object-contain lg:hidden block"
+          />
+          <button
+            className="btn btn-primary btn-outline capitalize hover:scale-105 duration-700 "
+            onClick={btnIndividuals}
+          >
+            I Want <span className="lowercase">to</span> Immigrate
+          </button>
         </div>
       </div>
 
       <div
         className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
-          isMenuShown ? "top-16 rounded-b-2xl bg-secondary" : "top-[-100%]"
+          isMenuShown ? "top-16 rounded-b-2xl bg-gray-400 " : "top-[-100%]"
         }`}
       >
-        <ul>
+        <ul className="flex flex-col">
           {links.map(({ id, link, name }) => (
-            <Link
+            <NavLink
               onClick={() => setIsMenuShown(!isMenuShown)}
               to={link}
               key={id}
             >
-              <li className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer">
+              <li className="px-4 capitalize text-left duration-300 hover:text-white  hover:scale-110 cursor-pointer">
                 {name}
               </li>
-            </Link>
+            </NavLink>
           ))}
-          <li
-            className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
-            onClick={btnIndividuals}
-          >
-            individuals
-          </li>
         </ul>
       </div>
     </>

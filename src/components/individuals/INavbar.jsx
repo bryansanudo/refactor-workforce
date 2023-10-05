@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
+
 import logo from "@/assets/logo.png";
 
 const INavbar = ({ setContent }) => {
+  const activeLink = ({ isActive }) =>
+    isActive
+      ? " relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[2px] after:bg-primary"
+      : ``;
   const [isMenuShown, setIsMenuShown] = useState(false);
   const btnCompanies = () => {
     setContent(2);
@@ -52,14 +56,14 @@ const INavbar = ({ setContent }) => {
             alt=""
             className="object-contain h-20 hidden lg:block  "
           />
-          <div className="hidden lg:flex items-center gap-20">
-            <ul className="flex ">
+          <div className="hidden lg:flex items-center mr-20 gap-20">
+            <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
-                <Link key={id} to={link}>
-                  <li className="px-4 capitalize  duration-300 hover:text-primary  hover:scale-110 cursor-pointer">
+                <NavLink key={id} to={link} className={activeLink}>
+                  <li className=" capitalize  duration-300 hover:text-primary  hover:scale-110 cursor-pointer">
                     {name}
                   </li>
-                </Link>
+                </NavLink>
               ))}
             </ul>
           </div>
@@ -91,9 +95,9 @@ const INavbar = ({ setContent }) => {
           isMenuShown ? "top-16 rounded-b-2xl bg-gray-400 " : "top-[-100%]"
         }`}
       >
-        <ul>
+        <ul className="flex flex-col">
           {links.map(({ id, link, name }) => (
-            <Link
+            <NavLink
               onClick={() => setIsMenuShown(!isMenuShown)}
               to={link}
               key={id}
@@ -101,7 +105,7 @@ const INavbar = ({ setContent }) => {
               <li className="px-4 capitalize text-left duration-300 hover:text-white  hover:scale-110 cursor-pointer">
                 {name}
               </li>
-            </Link>
+            </NavLink>
           ))}
         </ul>
       </div>
