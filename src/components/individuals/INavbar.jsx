@@ -44,16 +44,19 @@ const INavbar = ({ setContent }) => {
 
   return (
     <>
-      <div className="fixed w-full h-16 bg-primary text-white z-20  ">
-        <div className="flex justify-center  lg:justify-between gap-6 items-center max-w-screen-xl mx-auto px-3 h-full">
-          <div className="hidden lg:flex items-center">
-            <div className="flex items-center flex-row justify-center bg-white rounded-lg p-1 ">
-              <img src={logo} alt="" className="object-contain h-10  " />
-            </div>
+      <div className="fixed w-full h-24 bg-gray-600 text-white z-20  ">
+        <div className="flex justify-between gap-6 items-center max-w-[1600px] mx-auto px-3 h-full">
+          {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
+          <img
+            src={logo}
+            alt=""
+            className="object-contain h-20 hidden lg:block  "
+          />
+          <div className="hidden lg:flex items-center gap-20">
             <ul className="flex ">
               {links.map(({ id, link, name }) => (
                 <Link key={id} to={link}>
-                  <li className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer">
+                  <li className="px-4 capitalize  duration-300 hover:text-primary  hover:scale-110 cursor-pointer">
                     {name}
                   </li>
                 </Link>
@@ -68,9 +71,12 @@ const INavbar = ({ setContent }) => {
             {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
 
-          <div className="bg-white p-1 rounded-full block lg:hidden">
-            <img src="/favicon.png" className="h-10 object-contain" />
-          </div>
+          {/* <div className="bg-white p-1 rounded-full block lg:hidden">
+          </div> */}
+          <img
+            src="/favicon.png"
+            className="h-10 object-contain lg:hidden block"
+          />
           <button className="btn  btn-secondary " onClick={btnCompanies}>
             companies
           </button>
