@@ -35,7 +35,7 @@ const IServices = () => {
 
           {/* Longstanding Success */}
           <TitleContent title="Longstanding Success">
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               The EB-3 'Other Workers' Visa, created by the US Government,
               provides an opportunity for foreign nationals to work in positions
               experiencing chronic labor shortages. With a yearly allocation of
@@ -46,7 +46,7 @@ const IServices = () => {
               ensuring a smooth and successful sponsorship process for all
               parties involved.
             </p>
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               The EB-3 "Other Workers" Visa is a great way to become a permanent
               resident of the United States. You can get this visa by changing
               your status or by going through consular processing in your home
@@ -56,7 +56,7 @@ const IServices = () => {
           </TitleContent>
 
           {/* Who is eligible for EB3? */}
-          <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-10">
+          <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-6">
             <div className="md:w-1/2 flex items-center justify-center ">
               <img
                 src={jobImg}
@@ -110,7 +110,7 @@ const IServices = () => {
           </div>
 
           {/* What does the process entail? */}
-          <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-10">
+          <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-6">
             <div className="md:w-1/2 max-w-[500px]">
               <div className="flex items-center justify-center flex-col ">
                 <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
@@ -275,7 +275,7 @@ const IServices = () => {
 
           {/* Why does this process work? */}
           <TitleContent title=" Why does this process work?">
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               Employers are having a harder time than ever before finding people
               to fill their low-skilled jobs. Industries like cleaning, food
               service, packing, and storage have been hit the hardest. Instead
@@ -285,7 +285,7 @@ const IServices = () => {
               to fill open positions with the help of an EB-3 visa for unskilled
               workers.
             </p>
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               The Immigration Act of 1990 set up a program called
               "Employment-Based Visas," which lets US businesses sponsor foreign
               workers who want to work and are qualified to do so. There are
@@ -293,7 +293,7 @@ const IServices = () => {
               lot of schooling, while part of the third type (the EB-3) is for
               people who can do unskilled work for their future employers.
             </p>
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               The EB-3 "Other Worker" Visa process leads directly to permanent
               residency in the U.S., and the terms are better than most of the
               other ways to get there.
@@ -306,7 +306,7 @@ const IServices = () => {
 
           {/* What we do */}
           <TitleContent title="What We Do">
-            <p className={`${styles.sectionText} px-2`}>
+            <p className={`${styles.sectionText} px-4`}>
               Experience a seamless process in securing EB3 visa workers with
               our comprehensive support. From the very beginning, our team is
               dedicated to finding and vetting potential candidates, and

@@ -74,7 +74,7 @@ const IAbout = () => {
             and those with non-immigrant visas to become lawful permanent
             residents of the United States.
           </p>
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} px-4`}>
             EB-3 Workforce Solutions assists American companies in hiring the
             qualified personnel they require to expand and prosper. EB-3
             Workforce Solutions has assisted in addressing the persistent lack
