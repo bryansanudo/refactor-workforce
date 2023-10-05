@@ -45,8 +45,11 @@ const INavbar = ({ setContent }) => {
   return (
     <>
       <div className="fixed w-full h-16 bg-primary text-white z-20  ">
-        <div className="flex justify-between  md:gap-5 items-center max-w-screen-xl mx-auto px-8 h-full">
+        <div className="flex justify-start lg:justify-between gap-8 items-center max-w-screen-xl mx-auto px-8 h-full">
           <div className="hidden lg:flex items-center">
+            <div className="flex items-center flex-row justify-center bg-white rounded-lg p-1 ">
+              <img src={logo} alt="" className="object-contain h-10  " />
+            </div>
             <ul className="flex ">
               {links.map(({ id, link, name }) => (
                 <Link key={id} to={link}>
@@ -55,12 +58,6 @@ const INavbar = ({ setContent }) => {
                   </li>
                 </Link>
               ))}
-              <li
-                className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
-                onClick={btnCompanies}
-              >
-                companies
-              </li>
             </ul>
           </div>
 
@@ -71,13 +68,12 @@ const INavbar = ({ setContent }) => {
             {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
 
-          <div className="flex items-center flex-row justify-center bg-white rounded-lg p-1 ">
-            <img
-              src={logo}
-              alt=""
-              className=" object-cover h-10 duration-300 shadow-xl cursor-pointer shadow-thSecondary hover:scale-105"
-            />
+          <div className="bg-white p-1 rounded-full block lg:hidden">
+            <img src="/favicon.png" className="h-10 object-contain" />
           </div>
+          <button className="btn  btn-secondary " onClick={btnCompanies}>
+            companies
+          </button>
         </div>
       </div>
 
@@ -98,12 +94,6 @@ const INavbar = ({ setContent }) => {
               </li>
             </Link>
           ))}
-          <li
-            className="px-4 capitalize  duration-300 hover:text-white  hover:scale-110 cursor-pointer"
-            onClick={btnCompanies}
-          >
-            companies
-          </li>
         </ul>
       </div>
     </>
