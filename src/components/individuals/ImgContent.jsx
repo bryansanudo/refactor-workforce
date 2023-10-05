@@ -14,9 +14,6 @@ const ImgContent = ({ img, title1, title2, children }) => {
           </p>
         </div>
         {children}
-        <button className="btn btn-outline btn-primary mt-4 animate-pulse">
-          YES! TEACH ME HOW
-        </button>
       </div>
     </div>
   );
