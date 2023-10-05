@@ -13,7 +13,7 @@ const IHeroHome = () => {
         <div className="hero-overlay bg-black opacity-50" />
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
-            <h1 className="mb-5 text-5xl font-bold">
+            <h1 className="mb-5 md:text-5xl text-2xl font-bold">
               The Better FREE Way To Connect With The Right Manpower For Your
               Business
             </h1>
