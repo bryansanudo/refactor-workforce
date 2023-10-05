@@ -45,7 +45,7 @@ const INavbar = ({ setContent }) => {
   return (
     <>
       <div className="fixed w-full h-16 bg-primary text-white z-20  ">
-        <div className="flex justify-start lg:justify-between gap-4 items-center max-w-screen-xl mx-auto px-3 h-full">
+        <div className="flex justify-center  lg:justify-between gap-6 items-center max-w-screen-xl mx-auto px-3 h-full">
           <div className="hidden lg:flex items-center">
             <div className="flex items-center flex-row justify-center bg-white rounded-lg p-1 ">
               <img src={logo} alt="" className="object-contain h-10  " />
