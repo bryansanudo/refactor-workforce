@@ -17,7 +17,7 @@ const IServicesCard = () => {
 
         <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
           {/* Card one */}
-          <div className="flex flex-col overflow-hidden shadow-lg shadow-gray-500 rounded-3xl">
+          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
             <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <AiFillAlert className="text-7xl" />
               <p className="font-bold text-2xl">Historic Success</p>
@@ -28,7 +28,7 @@ const IServicesCard = () => {
             </div>
           </div>
           {/* Card two */}
-          <div className="flex flex-col overflow-hidden shadow-lg shadow-gray-500 rounded-3xl">
+          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
             <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <AiFillAlert className="text-7xl" />
               <p className="font-bold text-2xl">Opportunity Awaits</p>
@@ -39,7 +39,7 @@ const IServicesCard = () => {
             </div>
           </div>
           {/* Card three */}
-          <div className="flex flex-col overflow-hidden shadow-lg shadow-gray-500 rounded-3xl">
+          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
             <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <AiFillAlert className="text-7xl" />
               <p className="font-bold text-2xl">Versatile Process</p>

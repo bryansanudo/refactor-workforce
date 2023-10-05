@@ -15,7 +15,7 @@ const IHistories = () => {
 
         {/* A Process for almost anyone*/}
         <TitleContent title="A Process for almost anyone">
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} px-2 `}>
             We have seen first hand this process work for many different people
             at many different stages in their lives. The EB-3 program kickstarts
             opportunity in the United States by providing a U.S. Green Card to
@@ -23,7 +23,7 @@ const IHistories = () => {
             client's experiences with this Green Card process with BDV
             Solutions. No two cases are the same!
           </p>
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} px-2 `}>
             How does this process actually work for people? How long will the
             EB-3 Unskilled Visa take? Can I get promoted in my sponsor job? What
             kind of opportunities do I have after the program? Read to learn
@@ -84,7 +84,7 @@ const IHistories = () => {
         </TitleContent>
 
         {/* Testimonials */}
-        <ISliderTestimonials />
+        {/* <ISliderTestimonials /> */}
       </ISection>
     </>
   );
