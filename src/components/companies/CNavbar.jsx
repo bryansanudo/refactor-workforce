@@ -72,7 +72,7 @@ const CNavbar = ({ setContent }) => {
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
           >
-            {isMenuShown ? <FaTimes size={26} /> : <FaBars size={26} />}
+            {isMenuShown ? <FaTimes size={22} /> : <FaBars size={22} />}
           </div>
 
           {/* <div className="bg-white p-1 rounded-full block lg:hidden">
@@ -82,7 +82,7 @@ const CNavbar = ({ setContent }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <button
-            className="btn btn-primary text-[14px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
+            className="btn btn-primary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
             onClick={btnIndividuals}
           >
             I Want <span className="lowercase">to</span> Immigrate
