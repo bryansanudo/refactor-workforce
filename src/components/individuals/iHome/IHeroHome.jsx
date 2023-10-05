@@ -17,7 +17,9 @@ const IHeroHome = () => {
               The Better FREE Way To Connect With The Right Manpower For Your
               Business
             </h1>
-            <p className="mb-5 text-3xl">No Cost, No Hassle, No Brainer</p>
+            <p className="mb-5 md:text-3xl text-lg">
+              No Cost, No Hassle, No Brainer
+            </p>
             <button className="btn hover:scale-105 btn-primary">
               YES !TEACH ME HOW
             </button>
