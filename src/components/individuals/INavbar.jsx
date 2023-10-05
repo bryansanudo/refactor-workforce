@@ -85,7 +85,7 @@ const INavbar = ({ setContent }) => {
 
       <div
         className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
-          isMenuShown ? "top-16 rounded-b-2xl bg-primary " : "top-[-100%]"
+          isMenuShown ? "top-16 rounded-b-2xl bg-gray-600 " : "top-[-100%]"
         }`}
       >
         <ul>
