@@ -56,7 +56,7 @@ const INavbar = ({ setContent }) => {
             alt=""
             className="object-contain h-20 hidden lg:block  "
           />
-          <div className="hidden lg:flex items-center mr-20 gap-20">
+          <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
                 <NavLink key={id} to={link} className={activeLink}>
