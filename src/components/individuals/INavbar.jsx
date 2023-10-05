@@ -49,7 +49,7 @@ const INavbar = ({ setContent }) => {
   return (
     <>
       <div className="fixed w-full h-24 bg-gray-400 text-white z-20  ">
-        <div className="flex justify-between gap-6 items-center mx-6 lg:mx-10  px-3 h-full">
+        <div className="flex justify-between gap-4 items-center  lg:mx-10  px-3 h-full">
           {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
           <img
             src={logo}
@@ -72,7 +72,7 @@ const INavbar = ({ setContent }) => {
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
           >
-            {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
+            {isMenuShown ? <FaTimes size={26} /> : <FaBars size={26} />}
           </div>
 
           {/* <div className="bg-white p-1 rounded-full block lg:hidden">
@@ -82,7 +82,7 @@ const INavbar = ({ setContent }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <button
-            className="btn btn-secondary btn-outline capitalize hover:scale-105 duration-700 "
+            className="btn btn-secondary text-[14px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
             onClick={btnCompanies}
           >
             Looking For Employees?
