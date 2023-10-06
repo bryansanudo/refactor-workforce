@@ -8,9 +8,9 @@ const IFooter = () => {
         <img src={logoImg} alt="" />
         <p>
           EB-3 Workforce Solutions is not a law firm and does not provide legal
-          <br /> advice. Your communication with EB-3 Workforce Solutions does
-          not <br /> create an attorney-client relationship and is not protected
-          by attorney-client <br /> privilege.
+          advice. Your communication with EB-3 Workforce Solutions does not
+          create an attorney-client relationship and is not protected by
+          attorney-client privilege.
         </p>
       </aside>
 
