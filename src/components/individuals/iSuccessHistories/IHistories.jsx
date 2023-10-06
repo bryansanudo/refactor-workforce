@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ISection from "@/components/individuals/ISection";
 import EmployerTimeline from "@/components/individuals/iSuccessHistories/EmployerTimeline";
 import LifeTimeline from "@/components/individuals/iSuccessHistories/LifeTimeline";
@@ -7,6 +8,9 @@ import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 
 const IHistories = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <IHeroHistories />

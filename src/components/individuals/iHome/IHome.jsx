@@ -13,8 +13,13 @@ import ImgContent from "@/components/individuals/ImgContent";
 import EbTwoCol from "@/components/individuals/iHome/EbTwoCol";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
+import { useEffect } from "react";
 
 const IHome = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <IHeroHome />

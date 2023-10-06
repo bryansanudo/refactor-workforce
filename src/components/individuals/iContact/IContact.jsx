@@ -6,6 +6,10 @@ import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 
 const IContact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const steps = [
     {
       id: 1,
@@ -78,7 +82,7 @@ const IContact = () => {
       <IHeroContact />
       <ISection title="Contact" color="primary">
         {/* History of EB-3 Solutions */}
-        <TitleContent title="Take action now and apply!">
+        <TitleContent title="Feel free to apply without the need for any previous experience!">
           <p className={`${styles.sectionText}`}>
             Are you keen on obtaining a U.S. Permanent Resident Card (Green
             Card) for yourself and your family? MCC USA collaborates with U.S.

@@ -1,6 +1,9 @@
-import React from "react";
+import { useEffect } from "react";
 
 const IHeroResources = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       className="hero min-h-[60vh] "

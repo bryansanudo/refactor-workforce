@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ISection from "@/components/individuals/ISection";
 import contactImg from "@/assets/contact.jpg";
 import IHeroAbout from "@/components/individuals/iAbout/IHeroAbout";
@@ -9,6 +10,9 @@ import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 
 const IAbout = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <IHeroAbout />
