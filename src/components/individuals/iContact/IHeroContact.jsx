@@ -14,7 +14,7 @@ const IHeroContact = () => {
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
             <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold">
-              Feel free to apply without the need for any previous experience!
+              CONTACT US
             </h1>
           </div>
         </div>
