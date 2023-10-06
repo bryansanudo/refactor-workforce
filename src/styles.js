@@ -6,6 +6,9 @@ const styles = {
   sectionText:
     "max-w-[300px] md:max-w-[800px] md:text-left text-center tracking-wider mx-auto",
 
+  titleText:
+    "font-bold text-2xl text-center p-3 text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500  md:text-4xl",
+
   heroHeadText:
     "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
   heroSubText:

@@ -34,19 +34,19 @@ const IAbout = () => {
 
         {/* 2 Columns contend */}
         <div className="flex flex-col items-center justify-center mt-20">
-          <h2 className="font-bold text-3xl">
+          <h2 className={`${styles.titleText} max-w-[800px]`}>
             We have built strong relationships with current and former
             Government officials.
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center  pt-10 gap-20">
-            <div className="shadow-primary shadow-lg rounded-3xl md:w-[400px] md:h-[300px] w-[250px] h-[200px] flex flex-col items-center justify-center gap-6 p-3">
-              <GiWorld className="text-7xl" />
+            <div className="shadow-black shadow-md rounded-3xl md:w-[400px] md:h-[300px] w-[250px] h-[200px] flex flex-col items-center justify-center gap-6 p-3">
+              <GiWorld className="text-7xl text-primary" />
               <p className="font-bold">
                 50 +Countries represented throughout the globe{" "}
               </p>
             </div>
-            <div className="shadow-primary shadow-lg rounded-3xl md:w-[400px] md:h-[300px] w-[250px] h-[200px] flex flex-col items-center justify-center gap-6 p-3">
-              <BsFillPersonVcardFill className="text-7xl" />
+            <div className="shadow-black shadow-md rounded-3xl md:w-[400px] md:h-[300px] w-[250px] h-[200px] flex flex-col items-center justify-center gap-6 p-3">
+              <BsFillPersonVcardFill className="text-7xl text-primary" />
               <p className="font-bold">
                 A large number of client green card approvals were granted in
                 the year 2022, excluding dependents.

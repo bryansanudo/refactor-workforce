@@ -3,7 +3,7 @@ import { AiFillAlert } from "react-icons/ai";
 
 const IServicesCard = () => {
   return (
-    <div className="flex flex-col items-center  mx-10 p-2 mb-6">
+    <div className="flex flex-col items-center md:mt-20 mt-10  mx-10 p-2 mb-6">
       <div className="relative  md:order-2">
         <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
           <div

@@ -1,3 +1,5 @@
+import { styles } from "@/styles";
+
 const ImgContent = ({ img, title1, title2, children }) => {
   return (
     <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row my-10">
@@ -9,9 +11,7 @@ const ImgContent = ({ img, title1, title2, children }) => {
           <p className="md:text-2xl text-xl text-gray-400 font-bold">
             {title1}
           </p>
-          <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-            {title2}
-          </p>
+          <p className={`${styles.titleText}`}>{title2}</p>
         </div>
         {children}
       </div>

@@ -70,37 +70,37 @@ const IServices = () => {
                 </p>
               </div>
 
-              <div className="flex items-center justify-start gap-2 mt-5">
+              <div className="flex items-center justify-start text-left gap-2 mt-5">
                 <div>
                   <GoDotFill />
                 </div>
                 <p>No degree requirements needed</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start text-left gap-2">
                 <div>
                   <GoDotFill />
                 </div>
                 <p>No prior work experience needed</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start text-left gap-2">
                 <div>
                   <GoDotFill />
                 </div>
                 <p>Can’t be overqualified</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start text-left gap-2">
                 <div>
                   <GoDotFill />
                 </div>
                 <p>Need an employer sponsor</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start text-left gap-2">
                 <div>
                   <GoDotFill />
                 </div>
                 <p>You can adjust your visa status within the U.S.</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start text-left gap-2">
                 <div>
                   <GoDotFill />
                 </div>
