@@ -114,6 +114,47 @@ const IContact = () => {
         {/* steps */}
 
         <TitleContent title="Steps for the On-boarding Process">
+          <ul className="steps steps-vertical text-lg  lg:steps-horizontal px-4 md:mx-32">
+            {steps.map(({ id, title, subtitle }) => {
+              // Genera un id único para cada elemento de la lista
+              const uniqueId = `modal-${id}`;
+
+              return (
+                <li key={id} className="step step-primary font-bold">
+                  <span
+                    onClick={() =>
+                      document.getElementById(uniqueId).showModal()
+                    }
+                    className="btn btn-outline btn-primary"
+                  >
+                    {title}
+                  </span>
+                  <dialog id={uniqueId} className="modal">
+                    <div className="modal-box">
+                      <form method="dialog">
+                        {/* if there is a button in form, it will close the modal */}
+                        <button
+                          onClick={() =>
+                            document.getElementById(uniqueId).close()
+                          }
+                          className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                        >
+                          ✕
+                        </button>
+                      </form>
+                      <h3 className="font-bold text-2xl mb-4">{title}</h3>
+                      <p className="text-md text-gray-400 font-normal">
+                        {subtitle}
+                      </p>
+                    </div>
+                  </dialog>
+                </li>
+              );
+            })}
+          </ul>
+        </TitleContent>
+
+        {/*  <TitleContent title="Steps for the On-boarding Process">
           <div className=" grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3">
             {steps.map(({ id, title, subtitle }) => (
               <div
@@ -126,7 +167,7 @@ const IContact = () => {
               </div>
             ))}
           </div>
-        </TitleContent>
+        </TitleContent> */}
 
         {/* maps */}
 
