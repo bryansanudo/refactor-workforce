@@ -83,7 +83,7 @@ const IContact = () => {
       <ISection title="Contact" color="primary">
         {/* History of EB-3 Solutions */}
         <TitleContent title="Feel free to apply without the need for any previous experience!">
-          <p className={`${styles.sectionText}`}>
+          <p className={`${styles.sectionText} px-4`}>
             Are you keen on obtaining a U.S. Permanent Resident Card (Green
             Card) for yourself and your family? MCC USA collaborates with U.S.
             corporations that are willing to support your Green Card application
