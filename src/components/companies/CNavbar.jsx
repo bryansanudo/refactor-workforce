@@ -85,7 +85,7 @@ const CNavbar = ({ setContent }) => {
             className="btn btn-primary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
             onClick={btnIndividuals}
           >
-            I Want<span className="lowercase">to</span>Imigrate
+            I Want<span className="lowercase">to</span>Immigrate
           </button>
         </div>
       </div>
