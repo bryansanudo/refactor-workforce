@@ -44,6 +44,11 @@ const INavbar = ({ setContent }) => {
       link: "/individuals/contact",
       name: "contact",
     },
+    {
+      id: 7,
+      link: "/individuals/vacancies",
+      name: "vacancies",
+    },
   ];
 
   return (

@@ -10,6 +10,16 @@ import IServices from "@/components/individuals/iServices/IServices";
 import IHistories from "@/components/individuals/iSuccessHistories/IHistories";
 import IResources from "@/components/individuals/iResources/IResources";
 import IContact from "@/components/individuals/iContact/IContact";
+import IVacancies from "@/components/individuals/iVacancies/IVacancies";
+
+import Subway from "@/components/individuals/iVacancies/partners/Subway";
+import Chula from "@/components/individuals/iVacancies/partners/Chula";
+import Karst from "@/components/individuals/iVacancies/partners/Karst";
+import Kuz from "@/components/individuals/iVacancies/partners/Kuz";
+import Midnight from "@/components/individuals/iVacancies/partners/Midnight";
+import Mult from "@/components/individuals/iVacancies/partners/Mult";
+import Stoughton from "@/components/individuals/iVacancies/partners/Stoughton";
+import Wilderness from "@/components/individuals/iVacancies/partners/Wilderness";
 
 const Individuals = ({ content, setContent }) => {
   const navigate = useNavigate();
@@ -41,6 +51,7 @@ const Individuals = ({ content, setContent }) => {
           If you are Companie
         </button>
       </div> */}
+
       <INavbar setContent={setContent} />
       <Routes>
         <Route path="/" element={<IHome />} />
@@ -51,6 +62,23 @@ const Individuals = ({ content, setContent }) => {
         <Route path="/individuals/histories" element={<IHistories />} />
         <Route path="/individuals/resources" element={<IResources />} />
         <Route path="/individuals/contact" element={<IContact />} />
+
+        <Route path="/individuals/vacancies" element={<IVacancies />} />
+
+        <Route path="/individuals/vacancies/subway" element={<Subway />} />
+        <Route path="/individuals/vacancies/chula" element={<Chula />} />
+        <Route path="/individuals/vacancies/karst" element={<Karst />} />
+        <Route path="/individuals/vacancies/kuz" element={<Kuz />} />
+        <Route path="/individuals/vacancies/midnight" element={<Midnight />} />
+        <Route path="/individuals/vacancies/mult" element={<Mult />} />
+        <Route
+          path="/individuals/vacancies/stoughton"
+          element={<Stoughton />}
+        />
+        <Route
+          path="/individuals/vacancies/wilderness"
+          element={<Wilderness />}
+        />
       </Routes>
       <IFooter />
     </>
