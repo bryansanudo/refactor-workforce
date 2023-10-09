@@ -1,9 +1,6 @@
-import ISection from "@/components/individuals/ISection";
-import IHeroVacancies from "@/components/individuals/iVacancies/IHeroVacancies";
-import { styles } from "@/styles";
-import { GrLocation } from "react-icons/gr";
-import { Link } from "react-router-dom";
-
+import { useState } from "react";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 import chulaLogo from "@/assets/partners/chula-logo.png";
 import lestersLogo from "@/assets/partners/lesters-logo.png";
 import stoughtonLogo from "@/assets/partners/stoughton-logo.png";
@@ -12,9 +9,12 @@ import transportationLogo from "@/assets/partners/transportation-logo.png";
 import travelkuzLogo from "@/assets/partners/travelkuz-logo-bg.png";
 import wildernessLogo from "@/assets/partners/wilderness-logo.png";
 import kartsLogo from "@/assets/partners/karst-logo.png";
-import SliderPartners from "@/components/individuals/SliderPartners";
-const IVacancies = () => {
-  const vacancies = [
+import { styles } from "@/styles";
+import { GrLocation } from "react-icons/gr";
+import { Link } from "react-router-dom";
+
+const SliderPartners = () => {
+  const slides = [
     {
       id: 1,
       logo: stoughtonLogo,
@@ -70,9 +70,9 @@ const IVacancies = () => {
       logo: wildernessLogo,
       category: "tourism",
       name: "Wilderness Resort",
+      location: "Wisconsin Dells, WI",
       description:
         "Occupying 600 acres, Wilderness Resort is the largest water park resort in the United States, located in the world capital of water parks, Wisconsin Dells!",
-      location: "Wisconsin Dells, WI",
       button: "/individuals/vacancies/wilderness",
     },
     {
@@ -96,40 +96,80 @@ const IVacancies = () => {
       button: "/individuals/vacancies/mult",
     },
   ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
 
   return (
-    <>
-      <IHeroVacancies />
-      <ISection>
-        {/* <div className="grid grid-cols-3 px-6 m-10 gap-6">
-          {vacancies.map(
-            ({ id, name, logo, description, category, location, button }) => (
-              <div
-                key={id}
-                className="shadow-md bg-gray-200 shadow-black rounded-3xl p-6 flex flex-col items-center justify-center gap-4"
-              >
-                <img src={logo} alt="" />
-                <p className="font-bold text-xl">{name}</p>
-                <p className={`${styles.sectionText}`}>{description}</p>
-                <p className="kbd capitalize">{category}</p>
-                <div className="flex items-center justify-center gap-2">
-                  <GrLocation />
-                  <p className="font-bold">Location:</p>
-                  <p>{location}</p>
-                </div>
-                <Link to={button}>
-                  <button className="btn btn-outline btn-primary  capitalize">
-                    View Vacancies
-                  </button>
-                </Link>
-              </div>
-            )
-          )}
-        </div> */}
-        <SliderPartners />
-      </ISection>
-    </>
+    <div className="relative max-w-[1000px] flex items-center justify-center w-full my-20 flex-col md:flex-row ">
+      <div className="flex mx-auto w-full bottom-0 justify-center py-2 absolute z-30 ">
+        {slides.map((slide, slideIndex) => (
+          <div key={slideIndex}>
+            <RxDotFilled
+              onClick={() => goToSlide(slideIndex)}
+              className={`text-4xl cursor-pointer ${
+                slideIndex === currentIndex ? "text-primary" : "text-black"
+              }`}
+            />
+          </div>
+        ))}
+      </div>
+      {slides[currentIndex].title}
+
+      <div className="shadow-md  shadow-black rounded-3xl p-20 flex flex-col items-center justify-center gap-4">
+        <img
+          src={slides[currentIndex].logo}
+          className="object-contain w-[200px]"
+        />
+        <p className="font-bold text-xl">{slides[currentIndex].name}</p>
+        <p className={`${styles.sectionText}`}>
+          {slides[currentIndex].description}
+        </p>
+        <p className="kbd capitalize">{slides[currentIndex].category}</p>
+        <div className="flex items-center justify-center gap-2">
+          <GrLocation />
+          <p className="font-bold">Location:</p>
+          <p>{slides[currentIndex].location}</p>
+        </div>
+        <Link to={slides[currentIndex].button}>
+          <button className="btn btn-outline btn-primary  capitalize">
+            View Vacancies
+          </button>
+        </Link>
+      </div>
+
+      {/* Left Arrow */}
+      <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactLeft
+          className="text-primary"
+          onClick={prevSlide}
+          size={30}
+        />
+      </div>
+      {/* Right Arrow */}
+      <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactRight
+          className="text-primary"
+          onClick={nextSlide}
+          size={30}
+        />
+      </div>
+    </div>
   );
 };
 
-export default IVacancies;
+export default SliderPartners;
