@@ -1,6 +1,4 @@
-import React from "react";
-
-const ISection = ({ title, subtitle, children, name }) => {
+const ISection = ({ children, name }) => {
   return (
     <div>
       <section
