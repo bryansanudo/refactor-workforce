@@ -1,6 +1,6 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import CNavbar from "@/components/companies/CNavbar";
-import CHome from "@/components/companies/CHome";
+import CHome from "@/components/companies/cHome/CHome";
 import CAbout from "@/components/companies/CAbout";
 import CServices from "@/components/companies/CServices";
 import CHistories from "@/components/companies/CHistories";
