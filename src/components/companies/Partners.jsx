@@ -9,58 +9,106 @@ import { styles } from "@/styles";
 
 const Partners = () => {
   return (
-    <div className="container my-40 mx-auto px-6">
-      <section className="mb-32 text-center">
-        <h2 className={`${styles.cTitleText}`}>Our Trusted Partners</h2>
+    <>
+      <div className="container my-40 mx-auto px-6">
+        <section className="mb-32 text-center">
+          <h2 className={`${styles.cTitleText}`}>Our Trusted Partners</h2>
 
-        <div className="grid px-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img src={chulaLogo} className="max-w-[90px] dark:brightness-150" />
-          </div>
+          <div className="grid px-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={chulaLogo}
+                className="max-w-[90px] dark:brightness-150"
+              />
+            </div>
 
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={lestersLogo}
-              className="max-w-[90px] dark:brightness-150 flex items-center justify-center"
-            />
-          </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={lestersLogo}
+                className="max-w-[90px] dark:brightness-150 flex items-center justify-center"
+              />
+            </div>
 
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={stoughtonLogo}
-              className="max-w-[150px] dark:brightness-150"
-            />
-          </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={stoughtonLogo}
+                className="max-w-[150px] dark:brightness-150"
+              />
+            </div>
 
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={subwayLogo}
-              className="max-w-[150px] dark:brightness-150"
-            />
-          </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={subwayLogo}
+                className="max-w-[150px] dark:brightness-150"
+              />
+            </div>
 
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={transportationLogo}
-              className="max-w-[90px] dark:brightness-150"
-            />
-          </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={transportationLogo}
+                className="max-w-[90px] dark:brightness-150"
+              />
+            </div>
 
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={travelkuzLogo}
-              className="max-w-[200px] dark:brightness-150"
-            />
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={travelkuzLogo}
+                className="max-w-[200px] dark:brightness-150"
+              />
+            </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={wildernessLogo}
+                className="max-w-[90px] dark:brightness-150"
+              />
+            </div>
           </div>
-          <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
-            <img
-              src={wildernessLogo}
-              className="max-w-[90px] dark:brightness-150"
-            />
+        </section>
+      </div>
+      <div className="container  mx-auto px-6">
+        <section className="mb-32 text-center">
+          <h2 className={`${styles.cTitleText}`}>Our Trusted Partners</h2>
+
+          <div className="grid px-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={chulaLogo}
+                className="max-w-[90px] flex items-center justify-center grayscale"
+              />
+            </div>
+
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img src={lestersLogo} className="max-w-[90px] grayscale" />
+            </div>
+
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img src={stoughtonLogo} className="max-w-[150px] grayscale" />
+            </div>
+
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img src={subwayLogo} className="max-w-[150px] grayscale" />
+            </div>
+
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={transportationLogo}
+                className="max-w-[90px] grayscale"
+              />
+            </div>
+
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img src={travelkuzLogo} className="max-w-[200px] grayscale" />
+            </div>
+            <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
+              <img
+                src={wildernessLogo}
+                className="max-w-[90px] dark:brightness-150 grayscale"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 
