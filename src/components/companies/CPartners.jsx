@@ -50,7 +50,7 @@ const CPartners = () => {
           {/* <p className="text-base md:text-lg lg:text-xl text-center text-gray-600 font-normal xl:w-10/12 xl:mx-auto">
             Our success has come from being committed to the property and
             investing in the development of the product to maximize sales. At
-            the same time and maintaining the integrity
+            the same time and maintaining the int
           </p> */}
         </div>
         <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
