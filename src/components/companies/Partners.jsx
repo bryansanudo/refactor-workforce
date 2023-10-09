@@ -28,14 +28,14 @@ const Partners = () => {
           <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
             <img
               src={stoughtonLogo}
-              className="max-w-[90px] dark:brightness-150"
+              className="max-w-[150px] dark:brightness-150"
             />
           </div>
 
           <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
             <img
               src={subwayLogo}
-              className="max-w-[90px] dark:brightness-150"
+              className="max-w-[150px] dark:brightness-150"
             />
           </div>
 
@@ -49,7 +49,7 @@ const Partners = () => {
           <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
             <img
               src={travelkuzLogo}
-              className="max-w-[90px] dark:brightness-150"
+              className="max-w-[200px] dark:brightness-150"
             />
           </div>
           <div className="mx-auto mb-12 lg:mb-0 flex items-center justify-center">
