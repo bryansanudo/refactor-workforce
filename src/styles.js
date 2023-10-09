@@ -3,6 +3,9 @@ const styles = {
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
 
+  partnersStyles:
+    "w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 border-black bg-gray-200 flex justify-center p-4 ",
+
   sectionText:
     "max-w-[300px] md:max-w-[800px] md:text-left text-center tracking-wider mx-auto",
 
