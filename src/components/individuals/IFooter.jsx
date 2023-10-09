@@ -6,7 +6,7 @@ const IFooter = () => {
     <footer className="footer p-10 bg-base-200 text-base-content">
       <aside>
         <img src={logoImg} alt="" />
-        <p>
+        <p className="tracking-wider text-left max-w-[550px]">
           EB-3 Workforce Solutions is not a law firm and does not provide legal
           advice. Your communication with EB-3 Workforce Solutions does not
           create an attorney-client relationship and is not protected by

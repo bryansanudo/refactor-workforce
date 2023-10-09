@@ -10,7 +10,7 @@ import IFormContact from "@/components/individuals/IFormContact";
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
-import EbTwoCol from "@/components/individuals/iHome/EbTwoCol";
+import EbTwoCol from "@/components/companies/cHome/EbTwoCol";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
@@ -103,8 +103,6 @@ const IHome = () => {
             bright future with EB3 Workforce Solutions.
           </p>
         </TitleContent>
-
-        <ITestimonials />
 
         {/* Struggling to Find Commited Workers? */}
         <ImgContent

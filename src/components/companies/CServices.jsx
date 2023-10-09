@@ -1,4 +1,4 @@
-import CSection from "@/components/companies/CSection";
+import CSection from "@/components/individuals/ISection";
 
 const CServices = () => {
   return (

@@ -1,7 +1,7 @@
 import ISection from "@/components/individuals/ISection";
 import JamesBg from "@/assets/James-bg.jpg";
 import homeImg from "@/assets/home1.jpg";
-import IHeroHome from "@/components/individuals/iHome/IHeroHome";
+import CHeroHome from "@/components/companies/cHome/CHeroHome";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import ITestimonials from "@/components/individuals/iHome/ITestimonials";
@@ -9,9 +9,9 @@ import { RxGear } from "react-icons/rx";
 import IFormContact from "@/components/individuals/IFormContact";
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/individuals/IDivider";
-import ImgContent from "@/components/individuals/ImgContent";
-import EbTwoCol from "@/components/individuals/iHome/EbTwoCol";
-import TitleContent from "@/components/individuals/TitleContent";
+import ImgContent from "@/components/companies/ImgContent";
+import EbTwoCol from "@/components/companies/cHome/EbTwoCol";
+import TitleContent from "@/components/companies/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
 
@@ -22,7 +22,7 @@ const CHome = () => {
 
   return (
     <>
-      <IHeroHome />
+      <CHeroHome />
       <ISection>
         {/* James */}
         <ImgContent
@@ -46,14 +46,14 @@ const CHome = () => {
           <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
             <div className="bg-white p-3 rounded-full ">
-              <BiPhoneCall className="text-4xl text-primary" />
+              <BiPhoneCall className="text-4xl text-secondary" />
             </div>
             <p>Call Us</p>
             <p>305 564-1311</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
             <div className="bg-white p-3 rounded-full">
-              <AiOutlineMail className="text-primary text-4xl" />
+              <AiOutlineMail className="text-secondary text-4xl" />
             </div>
             <p>Email</p>
             <p>support@eb3wfs.com</p>
@@ -103,8 +103,6 @@ const CHome = () => {
             bright future with EB3 Workforce Solutions.
           </p>
         </TitleContent>
-
-        <ITestimonials />
 
         {/* Struggling to Find Commited Workers? */}
         <ImgContent

@@ -6,6 +6,8 @@ import CServices from "@/components/companies/CServices";
 import CHistories from "@/components/companies/CHistories";
 import CResources from "@/components/companies/CResources";
 import CContact from "@/components/companies/CContact";
+import IFooter from "@/components/individuals/IFooter";
+
 import { useEffect } from "react";
 const Companies = ({ content, setContent }) => {
   const navigate = useNavigate();
@@ -48,6 +50,7 @@ const Companies = ({ content, setContent }) => {
         <Route path="/companies/resources" element={<CResources />} />
         <Route path="/companies/contact" element={<CContact />} />
       </Routes>
+      <IFooter />
     </>
   );
 };
