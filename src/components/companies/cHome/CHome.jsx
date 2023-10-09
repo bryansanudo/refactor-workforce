@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import ITestimonials from "@/components/individuals/iHome/ITestimonials";
 import { RxGear } from "react-icons/rx";
-import IFormContact from "@/components/individuals/IFormContact";
+import CFormContact from "@/components/companies/CFormContact";
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/companies/ImgContent";
@@ -14,6 +14,7 @@ import EbTwoCol from "@/components/companies/cHome/EbTwoCol";
 import TitleContent from "@/components/companies/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
+import CPartners from "@/components/companies/CPartners";
 
 const CHome = () => {
   useEffect(() => {
@@ -118,7 +119,8 @@ const CHome = () => {
           </p>
         </ImgContent>
 
-        <IFormContact />
+        <CFormContact />
+        <CPartners />
 
         <Divider />
       </ISection>
