@@ -18,7 +18,7 @@ const Chula = () => {
         <p className="md:ml-40 ml-4 font-bold text-3xl">Position available</p>
       </div>
       <ISection>
-        <p>House/Life</p>
+        <p>Housekeeper/Lifeguard</p>
       </ISection>
     </>
   );

@@ -18,7 +18,7 @@ const Midnight = () => {
         <p className="md:ml-40 ml-4 font-bold text-3xl">Position available</p>
       </div>
       <ISection>
-        <p>San Art</p>
+        <p>Sandwich Artist Art</p>
       </ISection>
     </>
   );

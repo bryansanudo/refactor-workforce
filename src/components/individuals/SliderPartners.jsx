@@ -21,7 +21,7 @@ const SliderPartners = () => {
       category: "tourism",
       name: "Stoughton Trailers",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+        "Stoughton Trailers is an industry leader in transportation equipment manufacturing. Our Wisconsin intermodal chassis plants are located 100 short miles from the Chicagoland intermodal rail yard, providing convenient and cost effective delivery of new chassis products.",
       location: "Stoughton, WI",
       button: "/individuals/vacancies/stoughton",
     },
@@ -31,7 +31,7 @@ const SliderPartners = () => {
       category: "tourism",
       name: "Travel Kuz",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+        "Travel Kuz provides paid training while you become a professional CDL School Bus Driver!",
       location: "Gill, MA",
       button: "/individuals/vacancies/kuz",
     },
@@ -41,7 +41,7 @@ const SliderPartners = () => {
       category: "tourism",
       name: "Karst Stage",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+        "Located in Bozeman, MT, Karst Stage offers transportation for your group in the local Bozeman area, Yellowstone National Park, the western United States and Canada. It currently operates over 70 luxury charter vehicles.",
       location: "Bozeman, MO",
       button: "/individuals/vacancies/karst",
     },
@@ -51,7 +51,7 @@ const SliderPartners = () => {
       category: "tourism",
       name: "Subway of Alaska",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+        "Subway® has created a work environment, compensation and benefits program, and interactive culture that we believe foster positive working relationships. They support promotion from within and foster an entrepreneurial spirit through which each team member personally contributes to the company's success.",
       location: "Anchorage, AK",
       button: "/individuals/vacancies/subway",
     },
@@ -128,9 +128,8 @@ const SliderPartners = () => {
           </div>
         ))}
       </div>
-      {slides[currentIndex].title}
 
-      <div className="shadow-md  shadow-black rounded-3xl p-20 flex flex-col items-center justify-center gap-4">
+      <div className="shadow-md shadow-black rounded-3xl p-20 flex flex-col items-center justify-center gap-4 max-w-[600px]">
         <img
           src={slides[currentIndex].logo}
           className="object-contain w-[200px]"
