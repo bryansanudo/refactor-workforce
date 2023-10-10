@@ -49,13 +49,13 @@ const SliderPartners = () => {
       id: 4,
       logo: subwayLogo,
       category: "tourism",
-      name: "Subway of Alaska",
+      name: "Subway",
       description:
         "Subway® has created a work environment, compensation and benefits program, and interactive culture that we believe foster positive working relationships. They support promotion from within and foster an entrepreneurial spirit through which each team member personally contributes to the company's success.",
-      location: "Anchorage, AK",
+      location: "Anchorage, AK. Alaska",
       button: "/individuals/vacancies/subway",
     },
-    {
+    /* {
       id: 5,
       logo: stoughtonLogo,
       category: "tourism",
@@ -64,7 +64,7 @@ const SliderPartners = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
       location: "Fairbanks, AK",
       button: "/individuals/vacancies/midnight",
-    },
+    }, */
     {
       id: 6,
       logo: wildernessLogo,
@@ -85,7 +85,7 @@ const SliderPartners = () => {
       location: "Wisconsin Dells, WI",
       button: "/individuals/vacancies/chula",
     },
-    {
+    /* {
       id: 8,
       logo: stoughtonLogo,
       category: "tourism",
@@ -94,7 +94,7 @@ const SliderPartners = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
       location: "Chicago area",
       button: "/individuals/vacancies/mult",
-    },
+    }, */
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -115,7 +115,7 @@ const SliderPartners = () => {
   };
 
   return (
-    <div className="relative max-w-[1000px] flex items-center justify-center w-full my-20 flex-col md:flex-row ">
+    <div className="relative md:max-w-[1000px] max-w-[300px] flex items-center justify-center w-full my-20 flex-col md:flex-row ">
       <div className="flex mx-auto w-full bottom-0 justify-center py-2 absolute z-30 ">
         {slides.map((slide, slideIndex) => (
           <div key={slideIndex}>
@@ -129,7 +129,7 @@ const SliderPartners = () => {
         ))}
       </div>
 
-      <div className="shadow-md shadow-black rounded-3xl p-20 flex flex-col items-center justify-center gap-4 max-w-[600px]">
+      <div className="shadow-md shadow-black rounded-3xl md:py-20 py-10 px-6 flex flex-col items-center justify-center gap-4 max-w-[600px]">
         <img
           src={slides[currentIndex].logo}
           className="object-contain w-[200px]"
@@ -141,11 +141,11 @@ const SliderPartners = () => {
         <p className="kbd capitalize">{slides[currentIndex].category}</p>
         <div className="flex items-center justify-center gap-2">
           <GrLocation />
-          <p className="font-bold">Location:</p>
+          <p className="font-bold">Locations:</p>
           <p>{slides[currentIndex].location}</p>
         </div>
         <Link to={slides[currentIndex].button}>
-          <button className="btn btn-outline btn-primary  capitalize">
+          <button className="btn btn-outline btn-primary capitalize mb-6">
             View Vacancies
           </button>
         </Link>
