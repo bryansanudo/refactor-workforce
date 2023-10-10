@@ -14,11 +14,120 @@ import wildernessLogo from "@/assets/partners/wilderness-logo.png";
 import kartsLogo from "@/assets/partners/karst-logo.png";
 import SliderPartners from "@/components/individuals/SliderPartners";
 const IVacancies = () => {
+  const vacancies = [
+    {
+      id: 1,
+      logo: stoughtonLogo,
+      category: "tourism",
+      name: "Stoughton Trailers",
+      description:
+        "Stoughton Trailers is an industry leader in transportation equipment manufacturing. Our Wisconsin intermodal chassis plants are located 100 short miles from the Chicagoland intermodal rail yard, providing convenient and cost effective delivery of new chassis products.",
+      location: "Stoughton, WI",
+      button: "/individuals/vacancies/stoughton",
+    },
+    {
+      id: 2,
+      logo: travelkuzLogo,
+      category: "tourism",
+      name: "Travel Kuz",
+      description:
+        "Travel Kuz provides paid training while you become a professional CDL School Bus Driver!",
+      location: "Gill, MA",
+      button: "/individuals/vacancies/kuz",
+    },
+    {
+      id: 3,
+      logo: kartsLogo,
+      category: "tourism",
+      name: "Karst Stage",
+      description:
+        "Located in Bozeman, MT, Karst Stage offers transportation for your group in the local Bozeman area, Yellowstone National Park, the western United States and Canada. It currently operates over 70 luxury charter vehicles.",
+      location: "Bozeman, MO",
+      button: "/individuals/vacancies/karst",
+    },
+    {
+      id: 4,
+      logo: subwayLogo,
+      category: "tourism",
+      name: "Subway",
+      description:
+        "Subway® has created a work environment, compensation and benefits program, and interactive culture that we believe foster positive working relationships. They support promotion from within and foster an entrepreneurial spirit through which each team member personally contributes to the company's success.",
+      location: "Anchorage, AK. Alaska",
+      button: "/individuals/vacancies/subway",
+    },
+    /* {
+      id: 5,
+      logo: stoughtonLogo,
+      category: "tourism",
+      name: "Midnight Sun",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+      location: "Fairbanks, AK",
+      button: "/individuals/vacancies/midnight",
+    }, */
+    {
+      id: 6,
+      logo: wildernessLogo,
+      category: "tourism",
+      name: "Wilderness Resort",
+      location: "Wisconsin Dells, WI",
+      description:
+        "Occupying 600 acres, Wilderness Resort is the largest water park resort in the United States, located in the world capital of water parks, Wisconsin Dells!",
+      button: "/individuals/vacancies/wilderness",
+    },
+    {
+      id: 7,
+      logo: chulaLogo,
+      category: "tourism",
+      name: "Chula Vista",
+      description:
+        "Chula Vista Resort offers over 200,000 square feet of water parks, top-notch spas, culinary delights in one of the most outstanding chophouses in the USA, and even an 18-hole golf course!",
+      location: "Wisconsin Dells, WI",
+      button: "/individuals/vacancies/chula",
+    },
+    /* {
+      id: 8,
+      logo: stoughtonLogo,
+      category: "tourism",
+      name: "Mult Entities",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
+      location: "Chicago area",
+      button: "/individuals/vacancies/mult",
+    }, */
+  ];
   return (
     <>
       <IHeroVacancies />
       <ISection>
-        <SliderPartners />
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 grid-cols-1 my-10 mx-6 ">
+          {vacancies.map(
+            ({ id, logo, category, name, description, location, button }) => (
+              <div
+                key={id}
+                className="shadow-md gap-3 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px]"
+              >
+                <img
+                  src={logo}
+                  className="object-contain md:h-[350px] h-[200px]"
+                />
+                <p className="font-bold text-xl">{name}</p>
+                <p className={`${styles.sectionText}`}>{description}</p>
+                <p className="kbd capitalize">{category}</p>
+                <div className="flex items-center justify-center gap-2">
+                  <GrLocation />
+                  <p className="font-bold">Locations:</p>
+                  <p>{location}</p>
+                </div>
+                <Link to={button}>
+                  <button className="btn btn-outline btn-primary capitalize mb-6">
+                    View Vacancies
+                  </button>
+                </Link>
+              </div>
+            )
+          )}
+        </div>
       </ISection>
     </>
   );
