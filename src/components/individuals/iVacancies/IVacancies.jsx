@@ -18,31 +18,6 @@ const IVacancies = () => {
     <>
       <IHeroVacancies />
       <ISection>
-        {/* <div className="grid grid-cols-3 px-6 m-10 gap-6">
-          {vacancies.map(
-            ({ id, name, logo, description, category, location, button }) => (
-              <div
-                key={id}
-                className="shadow-md bg-gray-200 shadow-black rounded-3xl p-6 flex flex-col items-center justify-center gap-4"
-              >
-                <img src={logo} alt="" />
-                <p className="font-bold text-xl">{name}</p>
-                <p className={`${styles.sectionText}`}>{description}</p>
-                <p className="kbd capitalize">{category}</p>
-                <div className="flex items-center justify-center gap-2">
-                  <GrLocation />
-                  <p className="font-bold">Location:</p>
-                  <p>{location}</p>
-                </div>
-                <Link to={button}>
-                  <button className="btn btn-outline btn-primary  capitalize">
-                    View Vacancies
-                  </button>
-                </Link>
-              </div>
-            )
-          )}
-        </div> */}
         <SliderPartners />
       </ISection>
     </>
