@@ -105,13 +105,13 @@ const IVacancies = () => {
             ({ id, logo, category, name, description, location, button }) => (
               <div
                 key={id}
-                className="shadow-md gap-3 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px]"
+                className="shadow-md gap-3 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] "
               >
                 <img
                   src={logo}
-                  className="object-contain md:h-[350px] h-[200px]"
+                  className="object-contain md:w-[350px] w-[200px] mt-10"
                 />
-                <p className="font-bold text-xl">{name}</p>
+                {/* <p className="font-bold text-xl">{name}</p> */}
                 <p className={`${styles.sectionText}`}>{description}</p>
                 <p className="kbd capitalize">{category}</p>
                 <div className="flex items-center justify-center gap-2">
