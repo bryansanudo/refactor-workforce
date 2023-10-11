@@ -134,33 +134,26 @@ const IVacancies = () => {
                   key={id}
                   className="shadow-md gap-20 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] pt-8  "
                 >
-                  <div className="max-w-[300px]">
-                    <img
-                      src={logo}
-                      className="object-contain md:w-[350px] w-[200px] "
-                    />
+                  <div className="max-w-[300px] hover:scale-110 duration-700">
+                    <a href={website} target="_blank">
+                      <img
+                        src={logo}
+                        className="object-contain  md:w-[350px] w-[200px] "
+                      />
+                      {website}
+                    </a>
                   </div>
                   {/* <p className="font-bold text-xl">{name}</p> */}
                   <p className={`${styles.sectionText}`}>{description}</p>
                   {/* <p className="kbd capitalize">{category}</p> */}
                   <div>
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                      <GrLocation />
-                      <p className="font-bold">Locations:</p>
-                      <div className="flex flex-col items-start">
-                        <p>{location}</p>
-                        <p>{l2}</p>
-                        <p>{l3}</p>
-                      </div>
-                    </div>
-
                     <button
                       className="btn btn-primary btn-outline mb-6"
                       onClick={() =>
                         document.getElementById(uniqueId).showModal()
                       }
                     >
-                      View Vacancies
+                      View Details
                     </button>
 
                     <dialog id={uniqueId} className="modal">
@@ -171,22 +164,25 @@ const IVacancies = () => {
                             ✕
                           </button>
                         </form>
-                        <div className="flex items-center justify-center gap-4 mb-10">
+                        <div className="flex  items-center justify-center gap-4 mb-10">
                           <h3 className="font-bold text-lg">{v1}</h3>
                           <p className="py-4 kbd ">{usd1}</p>
                         </div>
+
                         <div className="flex items-center justify-center gap-4">
                           <h3 className="font-bold text-lg">{v2}</h3>
                           <p className={`${style} py-4`}>{usd2}</p>
                         </div>
-                        <div className="flex items-center justify-end animate-pulse">
-                          <a href={website} target="_blank">
-                            <img
-                              src={logo}
-                              alt=""
-                              className="h-24 w-24 object-contain"
-                            />
-                          </a>
+                        <div className="flex flex-col items-center justify-center gap-2 my-4">
+                          <div className="flex items-center justify-center gap-2">
+                            <GrLocation />
+                            <p className="font-bold">Locations</p>
+                          </div>
+                          <div className="flex flex-col items-center justify-center">
+                            <p>{location}</p>
+                            <p>{l2}</p>
+                            <p>{l3}</p>
+                          </div>
                         </div>
                       </div>
                     </dialog>
