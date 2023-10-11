@@ -2,7 +2,7 @@ import React from "react";
 
 const IDivider = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row text-white font-bold md:text-3xl text-xl ">
+    <div className="mt-6 w-full flex flex-col md:flex-row text-white font-bold md:text-3xl text-xl ">
       <div className="bg-secondary w-full py-8 flex items-center justify-center ">
         <p className="">GET IN TOUCH TODAY!</p>
       </div>

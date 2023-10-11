@@ -45,17 +45,21 @@ const IHome = () => {
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
           <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
-            <div className="bg-white p-3 rounded-full ">
-              <BiPhoneCall className="text-4xl text-primary" />
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white p-3 rounded-full ">
+                <BiPhoneCall className="text-4xl text-primary" />
+              </div>
+              <p>Call Us </p>
             </div>
-            <p>Call Us</p>
             <p>305 564-1311</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
-            <div className="bg-white p-3 rounded-full">
-              <AiOutlineMail className="text-primary text-4xl" />
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white p-3 rounded-full">
+                <AiOutlineMail className="text-primary text-4xl" />
+              </div>
+              <p>Email</p>
             </div>
-            <p>Email</p>
             <p>support@eb3wfs.com</p>
           </div>
         </div>
