@@ -23,7 +23,7 @@ const Subway = () => {
         <div className="mx-20 ">
           <PositionAvailable
             cardImg={assemblerImg}
-            title="Room Attendant"
+            title="Sandwich Artist"
             description="Additionally, you will have access to overtime hours that will be paid at 1.5 times your regular salary. $15 USD x 1.5 = $22.5 USD per overtime hour (overtime hours are not guaranteed and are assigned based on management's discretion)."
             usd="15"
           />
