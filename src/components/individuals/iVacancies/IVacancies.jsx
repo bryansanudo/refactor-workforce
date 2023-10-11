@@ -35,6 +35,19 @@ const IVacancies = () => {
       location: "Gill, MA",
       button: "/individuals/vacancies/kuz",
     },
+
+    {
+      id: 4,
+      logo: subwayLogo,
+      category: "tourism",
+      name: "Subway",
+      description:
+        "Subway® has created a work environment, compensation and benefits program, and interactive culture that we believe foster positive working relationships. They support promotion from within and foster an entrepreneurial spirit through which each team member personally contributes to the company's success.",
+      location: "Anchorage, AK.",
+      l2: "Fairbanksm Ak.",
+      l3: "Chicago Area.",
+      button: "/individuals/vacancies/subway",
+    },
     {
       id: 3,
       logo: kartsLogo,
@@ -44,16 +57,6 @@ const IVacancies = () => {
         "Located in Bozeman, MT, Karst Stage offers transportation for your group in the local Bozeman area, Yellowstone National Park, the western United States and Canada. It currently operates over 70 luxury charter vehicles.",
       location: "Bozeman, MO",
       button: "/individuals/vacancies/karst",
-    },
-    {
-      id: 4,
-      logo: subwayLogo,
-      category: "tourism",
-      name: "Subway",
-      description:
-        "Subway® has created a work environment, compensation and benefits program, and interactive culture that we believe foster positive working relationships. They support promotion from within and foster an entrepreneurial spirit through which each team member personally contributes to the company's success.",
-      location: "Anchorage, AK. Alaska",
-      button: "/individuals/vacancies/subway",
     },
     /* {
       id: 5,
@@ -100,30 +103,48 @@ const IVacancies = () => {
     <>
       <IHeroVacancies />
       <ISection>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 grid-cols-1 my-10 mx-6 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1 my-10 mx-6  ">
           {vacancies.map(
-            ({ id, logo, category, name, description, location, button }) => (
+            ({
+              id,
+              logo,
+              category,
+              name,
+              description,
+              location,
+              l2,
+              l3,
+              button,
+            }) => (
               <div
                 key={id}
-                className="shadow-md gap-3 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] "
+                className="shadow-md gap-20 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] pt-8  "
               >
-                <img
-                  src={logo}
-                  className="object-contain md:w-[350px] w-[200px] mt-10"
-                />
+                <div className="max-w-[300px]">
+                  <img
+                    src={logo}
+                    className="object-contain md:w-[350px] w-[200px] "
+                  />
+                </div>
                 {/* <p className="font-bold text-xl">{name}</p> */}
                 <p className={`${styles.sectionText}`}>{description}</p>
-                <p className="kbd capitalize">{category}</p>
-                <div className="flex items-center justify-center gap-2">
-                  <GrLocation />
-                  <p className="font-bold">Locations:</p>
-                  <p>{location}</p>
+                {/* <p className="kbd capitalize">{category}</p> */}
+                <div>
+                  <div className="flex items-center justify-center gap-2 mb-4">
+                    <GrLocation />
+                    <p className="font-bold">Locations:</p>
+                    <div className="flex flex-col items-start">
+                      <p>{location}</p>
+                      <p>{l2}</p>
+                      <p>{l3}</p>
+                    </div>
+                  </div>
+                  <Link to={button}>
+                    <button className="btn btn-outline btn-primary capitalize mb-6">
+                      View Vacancies
+                    </button>
+                  </Link>
                 </div>
-                <Link to={button}>
-                  <button className="btn btn-outline btn-primary capitalize mb-6">
-                    View Vacancies
-                  </button>
-                </Link>
               </div>
             )
           )}
