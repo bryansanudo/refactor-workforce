@@ -85,6 +85,7 @@ const IVacancies = () => {
       usd1: "$ 15 USD / Hour",
       v2: "Lifeguard",
       usd2: "$ 15 USD / Hour",
+      style: "kbd",
     },
     {
       id: 7,
