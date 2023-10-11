@@ -4,7 +4,7 @@ const Responsabilities = ({ children, location, locationImg, p1, p2, p3 }) => {
   return (
     <>
       <div className="flex mt-20">
-        <p className={`${styles.titleText} my-4`}>responsaiblities</p>
+        <p className={`${styles.titleText} my-4`}>Responsaiblities</p>
       </div>
       <div className=" w-full shadow-black shadow-lg  rounded-2xl p-10 mb-20 ">
         {children}

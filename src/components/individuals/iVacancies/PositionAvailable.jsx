@@ -4,7 +4,7 @@ const PositionAvailable = ({ cardImg, usd, title, description }) => {
   return (
     <div>
       <div className="flex">
-        <p className={`${styles.titleText} my-4`}>position available</p>
+        <p className={`${styles.titleText} my-4`}>Position available</p>
       </div>
       <div className="card lg:card-side bg-base-100 shadow-xl shadow-black">
         <figure>
@@ -12,7 +12,7 @@ const PositionAvailable = ({ cardImg, usd, title, description }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
-          <p>{description}</p>
+          <p className="text-left">{description}</p>
           <div className="card-actions items-center justify-end">
             <div>${usd}USD</div>
             <div className="kbd ">Hourly wage</div>
