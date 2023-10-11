@@ -24,6 +24,9 @@ const IVacancies = () => {
         "Stoughton Trailers is an industry leader in transportation equipment manufacturing. Our Wisconsin intermodal chassis plants are located 100 short miles from the Chicagoland intermodal rail yard, providing convenient and cost effective delivery of new chassis products.",
       location: "Stoughton, WI",
       button: "/individuals/vacancies/stoughton",
+      website: "https://www.stoughtontrailers.com/",
+      v1: "Assembler",
+      usd1: "$ 15 USD / Hour",
     },
     {
       id: 2,
@@ -34,6 +37,9 @@ const IVacancies = () => {
         "Travel Kuz provides paid training while you become a professional CDL School Bus Driver!",
       location: "Gill, MA",
       button: "/individuals/vacancies/kuz",
+      website: "https://www.travelkuz.com/",
+      v1: "General Labor",
+      usd1: "$ 15 USD / Hour",
     },
 
     {
@@ -47,6 +53,9 @@ const IVacancies = () => {
       l2: "Fairbanksm Ak.",
       l3: "Chicago Area.",
       button: "/individuals/vacancies/subway",
+      website: "https://www.subway.com/es-co",
+      v1: "Sandwich Artist",
+      usd1: "$ 15 USD / Hour",
     },
     {
       id: 3,
@@ -57,17 +66,11 @@ const IVacancies = () => {
         "Located in Bozeman, MT, Karst Stage offers transportation for your group in the local Bozeman area, Yellowstone National Park, the western United States and Canada. It currently operates over 70 luxury charter vehicles.",
       location: "Bozeman, MO",
       button: "/individuals/vacancies/karst",
+      website: "https://karststage.com/",
+      v1: "General Labor",
+      usd1: "$ 15 USD / Hour",
     },
-    /* {
-      id: 5,
-      logo: stoughtonLogo,
-      category: "tourism",
-      name: "Midnight Sun",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
-      location: "Fairbanks, AK",
-      button: "/individuals/vacancies/midnight",
-    }, */
+
     {
       id: 6,
       logo: wildernessLogo,
@@ -77,6 +80,11 @@ const IVacancies = () => {
       description:
         "Occupying 600 acres, Wilderness Resort is the largest water park resort in the United States, located in the world capital of water parks, Wisconsin Dells!",
       button: "/individuals/vacancies/wilderness",
+      website: "https://www.wildernessresort.com/",
+      v1: "Housekeeper",
+      usd1: "$ 15 USD / Hour",
+      v2: "Lifeguard",
+      usd2: "$ 15 USD / Hour",
     },
     {
       id: 7,
@@ -87,17 +95,13 @@ const IVacancies = () => {
         "Chula Vista Resort offers over 200,000 square feet of water parks, top-notch spas, culinary delights in one of the most outstanding chophouses in the USA, and even an 18-hole golf course!",
       location: "Wisconsin Dells, WI",
       button: "/individuals/vacancies/chula",
+      website: "https://chulavistaresort.com/",
+      v1: "Housekeeper",
+      usd1: "$ 15 USD / Hour",
+      v2: "Lifeguard",
+      usd2: "$ 15 USD / Hour",
+      style: "kbd",
     },
-    /* {
-      id: 8,
-      logo: stoughtonLogo,
-      category: "tourism",
-      name: "Mult Entities",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi vel quas laborum, dolores quo nostrum esse, cupiditate velit, veniam exercitationem quia! Quidem quibusdam aspernatur minus vel, repellat aliquid delectus.",
-      location: "Chicago area",
-      button: "/individuals/vacancies/mult",
-    }, */
   ];
   return (
     <>
@@ -115,38 +119,80 @@ const IVacancies = () => {
               l2,
               l3,
               button,
-            }) => (
-              <div
-                key={id}
-                className="shadow-md gap-20 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] pt-8  "
-              >
-                <div className="max-w-[300px]">
-                  <img
-                    src={logo}
-                    className="object-contain md:w-[350px] w-[200px] "
-                  />
-                </div>
-                {/* <p className="font-bold text-xl">{name}</p> */}
-                <p className={`${styles.sectionText}`}>{description}</p>
-                {/* <p className="kbd capitalize">{category}</p> */}
-                <div>
-                  <div className="flex items-center justify-center gap-2 mb-4">
-                    <GrLocation />
-                    <p className="font-bold">Locations:</p>
-                    <div className="flex flex-col items-start">
-                      <p>{location}</p>
-                      <p>{l2}</p>
-                      <p>{l3}</p>
-                    </div>
+              usd1,
+              v1,
+              usd2,
+              v2,
+              website,
+              style,
+            }) => {
+              const uniqueId = `modal-${id}`;
+
+              return (
+                <div
+                  key={id}
+                  className="shadow-md gap-20 shadow-black rounded-3xl px-6 flex flex-col items-center justify-between max-w-[600px] pt-8  "
+                >
+                  <div className="max-w-[300px]">
+                    <img
+                      src={logo}
+                      className="object-contain md:w-[350px] w-[200px] "
+                    />
                   </div>
-                  <Link to={button}>
-                    <button className="btn btn-outline btn-primary capitalize mb-6">
+                  {/* <p className="font-bold text-xl">{name}</p> */}
+                  <p className={`${styles.sectionText}`}>{description}</p>
+                  {/* <p className="kbd capitalize">{category}</p> */}
+                  <div>
+                    <div className="flex items-center justify-center gap-2 mb-4">
+                      <GrLocation />
+                      <p className="font-bold">Locations:</p>
+                      <div className="flex flex-col items-start">
+                        <p>{location}</p>
+                        <p>{l2}</p>
+                        <p>{l3}</p>
+                      </div>
+                    </div>
+
+                    <button
+                      className="btn btn-primary btn-outline mb-6"
+                      onClick={() =>
+                        document.getElementById(uniqueId).showModal()
+                      }
+                    >
                       View Vacancies
                     </button>
-                  </Link>
+
+                    <dialog id={uniqueId} className="modal">
+                      <div className="modal-box">
+                        <form method="dialog">
+                          {/* if there is a button in form, it will close the modal */}
+                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                            ✕
+                          </button>
+                        </form>
+                        <div className="flex items-center justify-center gap-4 mb-10">
+                          <h3 className="font-bold text-lg">{v1}</h3>
+                          <p className="py-4 kbd ">{usd1}</p>
+                        </div>
+                        <div className="flex items-center justify-center gap-4">
+                          <h3 className="font-bold text-lg">{v2}</h3>
+                          <p className={`${style} py-4`}>{usd2}</p>
+                        </div>
+                        <div className="flex items-center justify-end animate-pulse">
+                          <a href={website} target="_blank">
+                            <img
+                              src={logo}
+                              alt=""
+                              className="h-24 w-24 object-contain"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </dialog>
+                  </div>
                 </div>
-              </div>
-            )
+              );
+            }
           )}
         </div>
       </ISection>
