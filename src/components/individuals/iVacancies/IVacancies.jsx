@@ -185,15 +185,14 @@ const IVacancies = () => {
                         </div>
                         <div className="flex gap-4 justify-end items-center ">
                           <a href={website} target="_blank">
-                            {website}
-                          </a>
-
-                          <a href={website} target="_blank">
                             <img
                               src={logo}
                               className="h-20 w-20 object-contain "
                               alt=""
                             />
+                            <span className="link link-hover hover:text-primary">
+                              Website
+                            </span>
                           </a>
                         </div>
                       </div>
