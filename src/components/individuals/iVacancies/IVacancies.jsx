@@ -85,7 +85,7 @@ const IVacancies = () => {
       usd1: "$ 15 USD / Hour",
       v2: "Lifeguard",
       usd2: "$ 15 USD / Hour",
-      style: "kbd",
+      style: "badge badge-primary badge-outline",
     },
     {
       id: 7,
@@ -101,7 +101,7 @@ const IVacancies = () => {
       usd1: "$ 15 USD / Hour",
       v2: "Lifeguard",
       usd2: "$ 15 USD / Hour",
-      style: "kbd",
+      style: "badge badge-primary badge-outline",
     },
   ];
   return (
@@ -144,7 +144,7 @@ const IVacancies = () => {
                   </div>
                   {/* <p className="font-bold text-xl">{name}</p> */}
                   <p className={`${styles.sectionText}`}>{description}</p>
-                  {/* <p className="kbd capitalize">{category}</p> */}
+                  {/* <p className="badge badge-primary badge-outline capitalize">{category}</p> */}
                   <div>
                     <button
                       className="btn btn-primary btn-outline mb-6"
@@ -163,26 +163,37 @@ const IVacancies = () => {
                             ✕
                           </button>
                         </form>
-                        <div className="flex  items-center justify-center gap-4 mb-10">
-                          <h3 className="font-bold text-lg">{v1}</h3>
-                          <p className="py-4 kbd ">{usd1}</p>
+
+                        <div className="flex flex-col md:flex-row items-start justify-center">
+                          {/* works */}
+                          <div className="w-1/2 ">
+                            <div className="flex flex-col  items-center justify-center gap-4 mb-10">
+                              <h3 className="font-bold text-lg">{v1}</h3>
+                              <p className="py-4 badge badge-primary badge-outline ">
+                                {usd1}
+                              </p>
+                            </div>
+
+                            <div className="flex flex-col items-center justify-center gap-4">
+                              <h3 className="font-bold text-lg">{v2}</h3>
+                              <p className={`${style} py-4`}>{usd2}</p>
+                            </div>
+                          </div>
+
+                          {/* locations */}
+                          <div className="w-1/2 flex  flex-col items-center justify-center gap-2 ">
+                            <div className="flex items-center justify-center gap-2">
+                              <GrLocation />
+                              <p className="font-bold">Locations</p>
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                              <p>{location}</p>
+                              <p>{l2}</p>
+                              <p>{l3}</p>
+                            </div>
+                          </div>
                         </div>
 
-                        <div className="flex items-center justify-center gap-4">
-                          <h3 className="font-bold text-lg">{v2}</h3>
-                          <p className={`${style} py-4`}>{usd2}</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center gap-2 my-4">
-                          <div className="flex items-center justify-center gap-2">
-                            <GrLocation />
-                            <p className="font-bold">Locations</p>
-                          </div>
-                          <div className="flex flex-col items-center justify-center">
-                            <p>{location}</p>
-                            <p>{l2}</p>
-                            <p>{l3}</p>
-                          </div>
-                        </div>
                         <div className="flex gap-4 justify-end items-center ">
                           <a href={website} target="_blank">
                             <img
