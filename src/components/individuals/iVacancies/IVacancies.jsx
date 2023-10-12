@@ -184,6 +184,19 @@ const IVacancies = () => {
                             <p>{l3}</p>
                           </div>
                         </div>
+                        <div className="flex gap-4 justify-end items-center ">
+                          <a href={website} target="_blank">
+                            {website}
+                          </a>
+
+                          <a href={website} target="_blank">
+                            <img
+                              src={logo}
+                              className="h-20 w-20 object-contain hover:scale-110 duration-500"
+                              alt=""
+                            />
+                          </a>
+                        </div>
                       </div>
                     </dialog>
                   </div>
