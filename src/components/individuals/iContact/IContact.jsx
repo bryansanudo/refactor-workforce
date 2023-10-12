@@ -120,7 +120,7 @@ const IContact = () => {
               const uniqueId = `modal-${id}`;
 
               return (
-                <li key={id} className="step step-primary font-bold">
+                <li key={id} className="step text-black font-bold">
                   <span
                     onClick={() =>
                       document.getElementById(uniqueId).showModal()
@@ -169,41 +169,14 @@ const IContact = () => {
           </div>
         </TitleContent> */}
 
-        {/* maps */}
-
         <TitleContent title="We are open Monday through Friday from 9:00am-5:00pm">
-          <p className="mx-10">
+          <p className={`${styles.sectionText}`}>
             Although we don’t have international or other national offices, you
             are welcome to schedule a call with our team by signing up for a
             free account.
           </p>
         </TitleContent>
-        <div className="hidden lg:block shadow-black shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.12577150501!2d-80.19247892458863!3d25.76640897734893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b682e4c089c9%3A0xe0d50371e9e8f416!2s777%20Brickell%20Ave%2C%20Miami%2C%20FL%2033131!5e0!3m2!1sen!2sus!4v1696260775392!5m2!1sen!2sus"
-            style={{
-              border: 0,
-              width: "800px",
-              height: "450px",
-            }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-        <div className="lg:hidden block shadow-black shadow-lg rounded-3xl">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.12577150501!2d-80.19247892458863!3d25.76640897734893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b682e4c089c9%3A0xe0d50371e9e8f416!2s777%20Brickell%20Ave%2C%20Miami%2C%20FL%2033131!5e0!3m2!1sen!2sus!4v1696260775392!5m2!1sen!2sus"
-            style={{
-              border: 0,
-              width: "280px",
-              height: "470px",
-            }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+
         <IFormContact />
         {/* <div className="mb-16" /> */}
       </ISection>

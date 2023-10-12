@@ -51,7 +51,7 @@ const IHome = () => {
               </div>
               <p>Call Us </p>
             </div>
-            <p>305 564-1311</p>
+            <p>(305) 564-1311</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
             <div className="flex items-center justify-center gap-4">
@@ -60,7 +60,7 @@ const IHome = () => {
               </div>
               <p>Email</p>
             </div>
-            <p>support@eb3wfs.com</p>
+            <p>recruiter@eb3wfs.com</p>
           </div>
         </div>
 

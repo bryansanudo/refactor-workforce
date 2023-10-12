@@ -106,9 +106,7 @@ const IResources = () => {
     <>
       <IHeroResources />
       <ISection title="Resources" color="primary">
-        <p className="font-bold text-3xl p-3 text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl mt-10 ">
-          Frequently Asked Questions
-        </p>
+        <p className={`${styles.titleText} mt-6`}>Frequently Asked Questions</p>
         <div className="flex flex-col items-center justify-center  my-10  w-[280px] md:w-[500px] lg:w-[900px]  ">
           {questions.map(({ id, question, answer }) => (
             <div

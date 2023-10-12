@@ -50,14 +50,14 @@ const CHome = () => {
               <BiPhoneCall className="text-4xl text-secondary" />
             </div>
             <p>Call Us</p>
-            <p>305 564-1311</p>
+            <p>(305) 564-1311</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
             <div className="bg-white p-3 rounded-full">
               <AiOutlineMail className="text-secondary text-4xl" />
             </div>
             <p>Email</p>
-            <p>support@eb3wfs.com</p>
+            <p>recruiter@eb3wfs.com</p>
           </div>
         </div>
 
