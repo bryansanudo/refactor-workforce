@@ -30,7 +30,7 @@ const IFooter = () => {
           Contact Us
         </header>
         <p className="">(305) 564-1311</p>
-        <p className="">support@eb3wfs.com</p>
+        <p className="">recruier@eb3wfs.com</p>
         <p className="">American Dream Recruiting</p>
         <p className="">777 Brickell Avenue Suite 500</p>
         <p className="">Miami, FL 33131</p>

@@ -19,7 +19,7 @@ const CDivider = () => {
           <p className="text-white font-bold">GET IN TOUCH TODAY!</p>
         </div>
         <div className=" w-full md:py-8 py-4">
-          <p className="text-white font-bold">305564-1311</p>
+          <p className="text-white font-bold">(305) 564-1311</p>
           <p className="text-sm font-normal text-white">AVAILABLE 24/7</p>
         </div>
       </div>
