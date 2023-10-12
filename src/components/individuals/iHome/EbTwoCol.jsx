@@ -11,11 +11,10 @@ const EbTwoCol = () => {
             <p className={`${styles.titleText}`}>Process Length</p>
             <p className="font-bold">Around 18 months</p>
             <p className={`${styles.sectionText}`}>
-              The length of the processing times for the EB3 program varies and
-              depends on the location (Longstanding Successcountry of origin)
-              and status of the applicant (Consular Process vs. Adjustment of
-              Status) and can also depend on the type of industry the applicant
-              is sought for.
+              The length of the processing times for the EB-3 Program varies and
+              depends on the location (Country of Origin) and status of the
+              applicant (Consular Process vs. Adjustment of Status) and can also
+              depend on the type of industry the applicant is sought for.
             </p>
           </div>
         </Tilt>
