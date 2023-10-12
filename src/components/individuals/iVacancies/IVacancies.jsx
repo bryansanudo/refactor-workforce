@@ -140,7 +140,6 @@ const IVacancies = () => {
                         src={logo}
                         className="object-contain  md:w-[350px] w-[200px] "
                       />
-                      {website}
                     </a>
                   </div>
                   {/* <p className="font-bold text-xl">{name}</p> */}
@@ -192,7 +191,7 @@ const IVacancies = () => {
                           <a href={website} target="_blank">
                             <img
                               src={logo}
-                              className="h-20 w-20 object-contain hover:scale-110 duration-500"
+                              className="h-20 w-20 object-contain "
                               alt=""
                             />
                           </a>
