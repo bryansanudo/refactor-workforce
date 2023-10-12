@@ -8,7 +8,7 @@ import ITestimonials from "@/components/individuals/iHome/ITestimonials";
 import { RxGear } from "react-icons/rx";
 import CFormContact from "@/components/companies/CFormContact";
 import contactImg from "@/assets/contact2.jpg";
-import Divider from "@/components/individuals/IDivider";
+import Divider from "@/components/companies/CDivider";
 import ImgContent from "@/components/companies/ImgContent";
 import EbTwoCol from "@/components/companies/cHome/EbTwoCol";
 import TitleContent from "@/components/companies/TitleContent";
@@ -46,17 +46,21 @@ const CHome = () => {
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
           <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
-            <div className="bg-white p-3 rounded-full ">
-              <BiPhoneCall className="text-4xl text-secondary" />
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white p-3 rounded-full ">
+                <BiPhoneCall className="text-4xl text-secondary" />
+              </div>
+              <p>Call Us </p>
             </div>
-            <p>Call Us</p>
             <p>(305) 564-1311</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
-            <div className="bg-white p-3 rounded-full">
-              <AiOutlineMail className="text-secondary text-4xl" />
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white p-3 rounded-full">
+                <AiOutlineMail className="text-secondary text-4xl" />
+              </div>
+              <p>Email</p>
             </div>
-            <p>Email</p>
             <p>recruiter@eb3wfs.com</p>
           </div>
         </div>
