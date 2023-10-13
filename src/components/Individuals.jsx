@@ -20,6 +20,7 @@ import Midnight from "@/components/individuals/iVacancies/partners/Midnight";
 import Mult from "@/components/individuals/iVacancies/partners/Mult";
 import Stoughton from "@/components/individuals/iVacancies/partners/Stoughton";
 import Wilderness from "@/components/individuals/iVacancies/partners/Wilderness";
+import CHome from "@/components/companies/cHome/CHome";
 
 const Individuals = ({ content, setContent }) => {
   const navigate = useNavigate();
@@ -57,6 +58,7 @@ const Individuals = ({ content, setContent }) => {
         <Route path="/" element={<IHome />} />
 
         <Route path="/individuals/home" element={<IHome />} />
+        <Route path="/companies/home" element={<CHome />} />
         <Route path="/individuals/about" element={<IAbout />} />
         <Route path="/individuals/services" element={<IServices />} />
         <Route path="/individuals/histories" element={<IHistories />} />

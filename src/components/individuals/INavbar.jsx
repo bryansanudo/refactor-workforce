@@ -56,11 +56,13 @@ const INavbar = ({ setContent }) => {
       <div className="fixed w-full h-24 bg-gray-400 text-white z-20  ">
         <div className="flex justify-between gap-4 items-center  lg:mx-10  px-3 h-full">
           {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
-          <img
-            src={logo}
-            alt=""
-            className="object-contain h-20 hidden lg:block  "
-          />
+          <Link to="/individuals/home">
+            <img
+              src={logo}
+              alt=""
+              className="object-contain h-20 hidden lg:block "
+            />
+          </Link>
           <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
@@ -86,12 +88,14 @@ const INavbar = ({ setContent }) => {
             src="/favicon.png"
             className="h-10 object-contain lg:hidden block"
           />
-          <button
-            className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
-            onClick={btnCompanies}
-          >
-            Looking For Employees?
-          </button>
+          <Link to={"/companies/home"}>
+            <button
+              className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
+              /* onClick={btnCompanies} */
+            >
+              Looking For Employees?
+            </button>
+          </Link>
         </div>
       </div>
 
